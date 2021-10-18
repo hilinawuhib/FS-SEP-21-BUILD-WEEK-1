@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+h4 ,.podcast-title{
+    color: white;
+}
+.see-all{
+    position:absolute;
+    top: 0;
+    left: 94%;
+    right: 0;
+    color: wheat;
+}
