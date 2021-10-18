@@ -38,7 +38,9 @@ footer{
     
     justify-items: center;
 }
-
+body{
+    background-color:var(--spotify-dark-bg) ;
+}
    
    
    
