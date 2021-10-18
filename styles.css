@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
 
 :root {
     --main-font: 'Montserrat', sans-serif;
     --spotify-green: #1DB954;
-    --spotify-grey: #6E6E6E;
+    --spotify-grey: #8a8a8a;
     --spotify-white: #EAEAEA;
     --spotify-dark-bg: #181818;
     --spotify-darker-bg: #121212;
@@ -12,7 +12,9 @@
 /* start of navbar styles */
 body {
     font-family: var(--main-font);
+    font-weight: 500;
 }
+
 .navbar-main-container {
     display: flex;
     flex-direction: column;
@@ -47,9 +49,11 @@ body {
     color: var(--spotify-white);
 }
 
+.main-links-container, .secondary-links-container, .install-app, .playlist-links-container {
+    font-size: 0.8rem;
+}
 .main-links-container, .secondary-links-container, .install-app {
-    font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .main-links-container a:nth-child(1) {
