@@ -14,6 +14,7 @@
 body {
     font-family: var(--main-font);
     font-weight: 500;
+    background-color: var(--spotify-dark-bg);
 }
 
 .navbar-main-container {
