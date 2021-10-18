@@ -19,11 +19,19 @@ h1 {
   color: white;
   background-color: grey;
 }
-
-.firstCard {
-  border: 1px solid;
-  display: inline-flex;
+img {
+  width: 80px;
+  display: inline-block;
 }
 span {
-  opacity: 0.2;
+  width: 80%;
+}
+
+.firstCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20%;
+  border: 1px solid black;
+  margin: 1rem;
 }
