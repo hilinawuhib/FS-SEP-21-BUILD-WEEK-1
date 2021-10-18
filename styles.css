@@ -35,10 +35,12 @@ footer{
 
 }
 .main-container2{
-   justify-content: center;
+    
+    justify-items: center;
+}
+
    
    
-}
-.main-container-sub{
-    flex-wrap: wrap;
-}
+   
+
+
