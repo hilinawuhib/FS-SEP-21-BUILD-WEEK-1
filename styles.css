@@ -47,14 +47,15 @@ body {
     color: var(--spotify-white);
 }
 
-
-.navbar-main-container .icon-fill {
-    display: none;
-}
-
 .main-links-container, .secondary-links-container, .install-app {
     font-size: 1rem;
     font-weight: 600;
+}
+
+.main-links-container a:nth-child(1) {
+    background-color: #363636;
+    color: var(--spotify-white);
+    border-radius: 3px;
 }
 
 .secondary-links-container {
