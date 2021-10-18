@@ -28,6 +28,7 @@ footer{
 .bi{
     color: var(--spotify-white);
     font-family: var(--main-font);
+   
 }
 .progress{
     z-index: 1;
@@ -40,6 +41,21 @@ footer{
 }
 body{
     background-color:var(--spotify-dark-bg) ;
+}
+.center{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.slide{
+    width:100%;
+    background:rgb(61, 57, 57);
+    height:5px;
+}
+.range{
+    width:10%;
+    background:rgb(219, 213, 213);
+    height:5px;
 }
    
    
