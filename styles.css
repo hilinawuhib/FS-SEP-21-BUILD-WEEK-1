@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --spotify-green: #1DB954;
+    --spotify-grey: #6E6E6E;
+    --spotify-white: #EAEAEA;
+    --spotify-dark-bg: #181818;
+    --spotify-darker-bg: #121212;
+}
