@@ -32,6 +32,9 @@ body {
     color: var(--spotify-grey);
     display: block;
     text-decoration: none;
+}
+
+.main-links-container a, .secondary-links-container a, .install-app {
     transition: color 0.5s;
 }
 
@@ -70,6 +73,21 @@ font-size: 28px;
 vertical-align: middle;
 }
 
+#create-playlist, #liked-songs {
+    font-size: 18px;
+    padding: 6px 6px;
+}
+
+#create-playlist {
+    background-color: var(--spotify-white);
+    color: var(--spotify-dark-bg);
+}
+
+#liked-songs {
+    color: var(--spotify-white);
+    background: rgb(51,17,168);
+    background: linear-gradient(135deg, rgba(51,17,168,1) 0%, rgba(102,101,160,1) 45%, rgba(255,255,255,1) 100%);
+}
 
 
 /* end of navbar styles */
