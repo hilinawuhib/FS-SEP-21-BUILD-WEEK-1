@@ -8,3 +8,68 @@
     --spotify-dark-bg: #181818;
     --spotify-darker-bg: #121212;
 }
+
+/* start of navbar styles */
+body {
+    font-family: var(--main-font);
+}
+.navbar-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#main-logo {
+    max-width: 130px;
+}
+
+.navbar-main-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-main-container a {
+    color: var(--spotify-grey);
+    display: block;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navbar-main-container a:hover {
+    color: var(--spotify-white);
+    display: block;
+}
+
+.navbar-main-container a:active {
+    color: var(--spotify-white);
+}
+
+
+.navbar-main-container .icon-fill {
+    display: none;
+}
+
+.main-links-container, .secondary-links-container, .install-app {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.secondary-links-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--spotify-grey);
+}
+
+.main-links-container a, .secondary-links-container a, .playlist-links-container a {
+    padding: 8px 8px;    
+}
+
+ion-icon {
+font-size: 28px;
+vertical-align: middle;
+}
+
+
+
+/* end of navbar styles */
