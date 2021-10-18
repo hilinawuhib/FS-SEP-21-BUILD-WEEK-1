@@ -1,10 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
 
 :root {
-    --main-font: 'Montserrat', sans-serif;
-    --spotify-green: #1DB954;
-    --spotify-grey: #6E6E6E;
-    --spotify-white: #EAEAEA;
-    --spotify-dark-bg: #181818;
-    --spotify-darker-bg: #121212;
+  --main-font: "Montserrat", sans-serif;
+  --spotify-green: #1db954;
+  --spotify-grey: #6e6e6e;
+  --spotify-white: #eaeaea;
+  --spotify-dark-bg: #181818;
+  --spotify-darker-bg: #121212;
+}
+
+h1 {
+  font-family: var(--main-font);
+}
+
+.arrowButton {
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: grey;
+}
+
+.firstCard {
+  border: 1px solid;
+  display: inline-flex;
+}
+span {
+  opacity: 0.2;
 }
