@@ -8,30 +8,47 @@
   --spotify-dark-bg: #181818;
   --spotify-darker-bg: #121212;
 }
-
+body {
+  background-color: rgba(46, 0, 2, 0.603);
+}
 h1 {
   font-family: var(--main-font);
 }
 
 .arrowButton {
-  border-radius: 50%;
+  border-radius: 100%;
+  width: 30px;
   border: none;
   color: white;
-  background-color: grey;
+  background-color: rgba(180, 176, 176, 0.493);
 }
 img {
   width: 80px;
-  display: inline-block;
+  display: inline-flex;
 }
 span {
+  font-family: var(--main-font);
+  text-align: center;
   width: 80%;
+  background: rgba(150, 150, 150, 0.459);
+  /* opacity: 0.2; */
 }
 
 .firstCard {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  width: 20%;
-  border: 1px solid black;
-  margin: 1rem;
+  width: 19%;
+
+  /* border: 1px solid black; */
+  margin: 5px;
+}
+/* .container {
+  flex-wrap: wrap;
+} */
+
+.loginpage {
+  align-items: center;
+  text-align: center;
+  color: #eaeaea;
 }
