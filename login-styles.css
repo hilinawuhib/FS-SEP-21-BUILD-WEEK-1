@@ -1,0 +1,26 @@
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --spotify-green: #1DB954;
+    --spotify-grey: #8a8a8a;
+    --spotify-white: #dad8d8;
+    --spotify-dark-bg: #181818;
+    --spotify-darker-bg: #121212;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+/* start of login page styles */
+
+.login-header {
+    border-bottom: 1px solid var(--spotify-white);
+}
+.login-header img {
+    max-width: 160px;
+}
+
+
+
+/* end of login page styles */
