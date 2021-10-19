@@ -211,6 +211,49 @@ body{
     height:5px;
 }
 
+     /* ARTIST PAGE CSS BEGINS HERE */
+
+
+.posted{
+    font-weight: 100;
+    font-size: smaller;
+}
+   
+.smallh6,th,td,h6{
+    font-family: var(--main-font);
+    color: var(--spotify-white);
+    
+}
+.smallh6{
+ font-weight: 200;   
+}
+.img-table{
+    height: 60px;
+    width: 60px;
+}
+.artist-pick-text{
+    float: right;
+}
+.artist-pick-text{
+    color: var(--spotify-grey);
+    font-weight:lighter;
+}
+.artist-pick-image{
+    height: 110px;
+    width: 110px;
+}
+.small-image{
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+}
+.playlist{
+    color: var(--spotify-white);
+    font-weight: 100;
+    font-size: smaller;
+}
+ /* ARTIST PAGE CSS ENDS  HERE */
+
 /* ALBUM PAGE CSS */
 
    .table{
@@ -225,3 +268,4 @@ body{
        font-weight:200;
    }
   
+
