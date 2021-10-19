@@ -18,43 +18,42 @@
         <img src="./mp_assets/Spotify_Logo_CMYK_Black.png" alt="">
     </header>
 
-    <div class="container d-flex">
-        <h6>To continue, log in to Spotify.</h6>
-    </div>
-    <button>
-        <ion-icon name="logo-facebook"></ion-icon>
-        CONTINUE WITH FACEBOOK
-    </button>
-    <button>
-        <ion-icon name="logo-apple"></ion-icon>
-        CONTINUE WITH APPLE
-    </button>
-    <div class="d-flex or-divider">
-        <span class="horizontal-line"></span>
-        <span>OR</span>
-        <span class="horizontal-line"></span>
-    </div>
-    <input class="d-block" type="text" placeholder="Email address or username">
-    <input class="d-block" type="password" placeholder="Password">
-    <div id="remember-me-log-in-container" class="d-flex">
-        <div class="remember-me-checkbox-container">
-            <input type="checkbox" id="remember-me" name="remember-me">
-            <label for="remember-me">Remember me</label>
+    <div class="container d-flex mt-4 mb-5 login-main-container">
+        <h6 class="mt-3">To continue, log in to Spotify.</h6>
+        <button id="fb-btn" class="full-width-btn">
+            <ion-icon name="logo-facebook"></ion-icon>
+            CONTINUE WITH FACEBOOK
+        </button>
+        <button id="apple-btn" class="full-width-btn">
+            <ion-icon name="logo-apple"></ion-icon>
+            CONTINUE WITH APPLE
+        </button>
+        <div class="d-flex or-divider mt-4 mb-4">
+            <span class="horizontal-line d-inline-block w-45"></span>
+            <span>OR</span>
+            <span class="horizontal-line d-inline-block w-45"></span>
         </div>
-        <div class="log-in-btn-container">
-            <button>LOG IN</button>
+        <input class="d-block w-100" type="text" placeholder="Email address or username">
+        <input class="d-block w-100" type="password" placeholder="Password">
+        <div id="remember-me-log-in-container" class="w-100 d-flex justify-content-between mt-4 mb-4">
+            <div id="remember-me-checkbox-container" class="w-100 align-self-center mt-3">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div id="log-in-btn-container" class="w-100">
+                <button>LOG IN</button>
+            </div>
         </div>
-    </div>
-    <div id="forgot-password mb-4">
-        <p>Forgot your password?</p>
-    </div>
-    <h5>Don't have an account?</h5>
-    <div class="sign-up-btn-container">
-        <button class="d-block">SIGN UP FOR SPOTIFY</button>
-    </div>
-    <div id="disclaimer-container">
-        <small>If you click "Log in with Facebook" and are not a Spotify user, you will be registered and you agree to
-            Spotify's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</small>
+        <div id="forgot-password" class="mb-4">
+            <p>Forgot your password?</p>
+        </div>
+        <h5 class="mt-3 pt-5 w-100">Don't have an account?</h5>
+        <button id="sign-up-btn" class="full-width-btn mt-n2">SIGN UP FOR SPOTIFY</button>
+        <div id="disclaimer-container" class="mt-4">
+            <small>If you click "Log in with Facebook" and are not a Spotify user, you will be registered and you agree
+                to
+                Spotify's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</small>
+        </div>
     </div>
 
 

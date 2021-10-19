@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
 :root {
     --main-font: 'Montserrat', sans-serif;
     --spotify-green: #1DB954;
     --spotify-grey: #8a8a8a;
-    --spotify-white: #dad8d8;
+    --spotify-white: #bdbbbb;
     --spotify-dark-bg: #181818;
     --spotify-darker-bg: #121212;
 }
@@ -13,7 +15,10 @@ body {
 }
 
 /* start of login page styles */
-
+h5 {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
 .login-header {
     border-bottom: 1px solid var(--spotify-white);
 }
@@ -21,6 +26,84 @@ body {
     max-width: 160px;
 }
 
+.login-main-container {
+    flex-direction: column;
+    max-width: 40vw;
+    align-items: center;
+}
 
+.full-width-btn {
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin: 7px 0;
+    font-weight: 600;
+}
+
+#fb-btn {
+    background-color: #3E5A9B;
+    color: white;
+}
+
+#apple-btn {
+    background-color: black;
+    color: white;
+}
+
+#sign-up-btn {
+    background-color: transparent;
+    color: var(--spotify-dark-bg);
+    border: 2px solid var(--spotify-dark-bg);
+    font-weight: 500;
+}
+#fb-btn:hover, #apple-btn:hover, #sign-up-btn:hover {
+    font-size: 1.1rem;
+}
+
+
+input[type="text"], input[type="password"] {
+    border: 1px solid var(--spotify-white);
+    margin: 5px 0;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+::placeholder {
+    color: var(--spotify-white);
+}
+
+#log-in-btn-container button {
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin: 7px 0;
+    font-weight: 600;
+    background-color: var(--spotify-green);
+    color: white;
+    font-size: 0.95rem;
+}
+
+#log-in-btn-container button:hover {
+    font-size: 1rem;
+}
+
+#remember-me-checkbox-container label {
+    color: var(--spotify-white);
+}
+
+#forgot-password p {
+    color: var(--spotify-green);
+}
+
+#disclaimer-container, .login-main-container h5 {
+    border-top: 1px solid var(--spotify-white);
+    padding: 20px 2px;
+    text-align: center;
+}
+
+#disclaimer-container a {
+    color: var(--spotify-green);
+}
 
 /* end of login page styles */
