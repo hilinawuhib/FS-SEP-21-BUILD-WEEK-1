@@ -9,5 +9,56 @@ h4 ,.podcast-title{
     top: 0;
     left: 94%;
     right: 0;
-    color: wheat;
+    color:dimgrey;
 }
+.images{
+width:120px;
+height: 110px;
+object-fit: cover;
+margin: 15px;
+box-shadow: cadetblue;
+border-radius: 10%;
+}
+#round-img{
+    border-radius: 50%;
+}
+.card{
+    background-color:rgb(36, 33, 33);
+    opacity: 0.7;
+}
+h5 ,p{
+    color: white;
+}
+h5{
+    font-size: 18px;
+}
+.card:hover{
+    transform: scale(1.0);
+    opacity: 1;
+}
+.see-all2{
+    position: absolute;
+    right:0;
+    left: 94%;
+    top: 70%;
+    color:dimgrey;
+
+}
+/* @media (max-width: 500px) {
+    .see-all2{
+        position: absolute;
+        right:0;
+        left: 82%;
+        top:135%;
+        color:dimgrey;
+    }
+}
+@media (min-width: 660px) {
+    .see-all2{
+        position: absolute;
+        right:0;
+        left: 87%;
+        top:107%;
+        color:dimgrey;
+    }
+} */
