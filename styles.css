@@ -273,4 +273,14 @@ body{
     height: 38px;
 }
 
+.follow-btn {
+    background: transparent;
+    color: var(--spotify-white);
+    border: 1px solid var(--spotify-grey);
+    border-radius: 2px;
+    padding: 0px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 /* end of button styles   */
