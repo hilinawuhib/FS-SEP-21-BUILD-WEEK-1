@@ -15,8 +15,12 @@ body {
 }
 
 /* start of login page styles */
-h5 {
+.login-main-container h5 {
     font-size: 1.05rem;
+    font-weight: 700;
+}
+.login-main-container h6 {
+    font-size: 0.9rem;
     font-weight: 700;
 }
 .login-header {
@@ -39,6 +43,20 @@ h5 {
     padding: 10px 0;
     margin: 7px 0;
     font-weight: 600;
+}
+
+.or-divider {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.horizontal-line {
+    width: 42%;
+    border-top: 1px solid var(--spotify-white);
+    transform: translateY(50%);
 }
 
 #fb-btn {
