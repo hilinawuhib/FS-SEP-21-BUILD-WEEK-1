@@ -14,8 +14,8 @@ h4 ,.podcast-title{
 }
 .see-all{
     position:absolute;
-    top: 0;
-    left: 94%;
+    top: 1%;
+    left: 90%;
     right: 0;
     color:var(--spotify-grey);
 }
@@ -47,8 +47,8 @@ h5{
 .see-all2{
     position: absolute;
     right:0;
-    left: 94%;
-    top: 70%;
+    left: 90%;
+    top: 42%;
     color:var(--spotify-grey);
 
 }
