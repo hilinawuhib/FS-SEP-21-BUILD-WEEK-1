@@ -212,4 +212,65 @@ body{
 }
    
    
-  
+/* start of button styles   */
+.btn-playground {
+    width: 50vw;
+    height: 100vh;
+}
+.play-btn {
+    width: 60px;
+    height: 60px;
+    padding: 13px;
+    background-color: var(--spotify-green);
+    border-radius: 50%;
+}
+.play-btn:hover {
+    width: 65px;
+    height: 65px;
+    padding: 18px;
+}
+
+.play-triangle {
+    width: 21px;
+    height: 21px;
+    margin-left: 5px;
+    align-self: center;
+}
+.pause-bars {
+    width: 21px;
+    height: 23px;
+    align-self: center;
+}
+
+.secondary-button-group {
+    color: var(--spotify-white);
+}
+
+.like-album-heart {
+    align-self: center;
+}
+
+.like-album-heart ion-icon {
+    font-size: 38px;
+  --ionicon-stroke-width: 16px;
+}
+
+.download-album {
+    align-self: center;
+}
+
+.download-album ion-icon {
+    font-size: 38px;
+  --ionicon-stroke-width: 16px;
+}
+
+.three-dots {
+    align-self: center;
+}
+
+.three-dots img {
+    width: 38px;
+    height: 38px;
+}
+
+/* end of button styles   */
