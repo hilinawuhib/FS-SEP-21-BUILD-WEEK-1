@@ -213,3 +213,15 @@ body{
    
    
   
+.smallh6,th,td,h6{
+    font-family: var(--main-font);
+    color: var(--spotify-white);
+    
+}
+.smallh6{
+ font-weight: 200;   
+}
+.img-table{
+    height: 60px;
+    width: 60px;
+}
