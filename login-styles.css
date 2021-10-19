@@ -23,7 +23,7 @@ h5 {
     border-bottom: 1px solid var(--spotify-white);
 }
 .login-header img {
-    max-width: 160px;
+    max-width: 200px;
 }
 
 .login-main-container {
