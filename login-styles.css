@@ -124,4 +124,54 @@ input[type="text"], input[type="password"] {
     color: var(--spotify-green);
 }
 
+/* Base for label styling */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: 0;
+    opacity: 0.01;
+  }
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 2.3em;
+    font-size: 1.05em;
+    line-height: 1.7;
+    cursor: pointer;
+  }
+
+  /* checkbox aspect */
+  
+  [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4em;
+    height: 1.4em;
+    border: none;
+    background-color: var(--spotify-green);
+    border-radius: 5px;
+    transition: all 0.275s;
+  }
+  /* checkbox mark aspect */
+   [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
+       content: 'X';
+       position: absolute;
+       top: .69em;
+       left: .38em;
+       font-size: 1em;
+       color: white;
+       line-height: 0;
+       transition: all 0.275s;
+   }
+   /* checkbox state change */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
 /* end of login page styles */
