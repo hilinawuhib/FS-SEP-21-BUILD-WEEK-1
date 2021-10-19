@@ -121,9 +121,9 @@ body {
     font-weight: 700;
 }
 
-.main-links-container a:nth-child(1) {
+.navbar-active-link {
     background-color: #363636;
-    color: var(--spotify-white);
+    color: var(--spotify-white)!important;
     border-radius: 3px;
 }
 
@@ -212,6 +212,7 @@ body{
     height:5px;
 }
    /* starting point of jumbotron */
+
    .jumbo-img {
     max-height: 50vh;
     object-fit: cover;
@@ -242,4 +243,136 @@ body{
  }
  /* end of jumbotron */
 
+
+
+     /* ARTIST PAGE CSS BEGINS HERE */
+
+
+.posted{
+    font-weight: 100;
+    font-size: smaller;
+}
+   
+.smallh6,th,td,h6{
+    font-family: var(--main-font);
+    color: var(--spotify-white);
+    
+}
+.smallh6{
+ font-weight: 200;   
+}
+.img-table{
+    height: 60px;
+    width: 60px;
+}
+.artist-pick-text{
+    float: right;
+}
+.artist-pick-text{
+    color: var(--spotify-grey);
+    font-weight:lighter;
+}
+.artist-pick-image{
+    height: 110px;
+    width: 110px;
+}
+.small-image{
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+}
+.playlist{
+    color: var(--spotify-white);
+    font-weight: 100;
+    font-size: smaller;
+}
+ /* ARTIST PAGE CSS ENDS  HERE */
+
+/* ALBUM PAGE CSS */
+
+   .table{
+       color: var(--spotify-white);
+       font-family: var(--main-font);
+
+   }
+   th{
+    align-items: flex-start;
+   }
+   .smallh6{
+       font-weight:200;
+   }
+
   
+
+/* start of button styles   */
+.btn-playground {
+    width: 50vw;
+    height: 100vh;
+}
+.play-btn {
+    width: 60px;
+    height: 60px;
+    padding: 13px;
+    background-color: var(--spotify-green);
+    border-radius: 50%;
+}
+.play-btn:hover {
+    width: 65px;
+    height: 65px;
+    padding: 18px;
+}
+
+.play-triangle {
+    width: 21px;
+    height: 21px;
+    margin-left: 5px;
+    align-self: center;
+}
+.pause-bars {
+    width: 21px;
+    height: 23px;
+    align-self: center;
+}
+
+.secondary-button-group {
+    color: var(--spotify-white);
+}
+
+.like-album-heart {
+    align-self: center;
+}
+
+.like-album-heart ion-icon {
+    font-size: 38px;
+  --ionicon-stroke-width: 16px;
+}
+
+.download-album {
+    align-self: center;
+}
+
+.download-album ion-icon {
+    font-size: 38px;
+  --ionicon-stroke-width: 16px;
+}
+
+.three-dots {
+    align-self: center;
+}
+
+.three-dots img {
+    width: 38px;
+    height: 38px;
+}
+
+.follow-btn {
+    background: transparent;
+    color: var(--spotify-white);
+    border: 1px solid var(--spotify-grey);
+    border-radius: 2px;
+    padding: 0px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* end of button styles   */
