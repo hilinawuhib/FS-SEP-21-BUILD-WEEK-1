@@ -120,9 +120,9 @@ body {
     font-weight: 700;
 }
 
-.main-links-container a:nth-child(1) {
+.navbar-active-link {
     background-color: #363636;
-    color: var(--spotify-white);
+    color: var(--spotify-white)!important;
     border-radius: 3px;
 }
 
