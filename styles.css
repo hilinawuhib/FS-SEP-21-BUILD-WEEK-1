@@ -211,7 +211,6 @@ body{
     height:5px;
 }
 
-
      /* ARTIST PAGE CSS BEGINS HERE */
 
 
@@ -254,3 +253,19 @@ body{
     font-size: smaller;
 }
  /* ARTIST PAGE CSS ENDS  HERE */
+
+/* ALBUM PAGE CSS */
+
+   .table{
+       color: var(--spotify-white);
+       font-family: var(--main-font);
+
+   }
+   th{
+    align-items: flex-start;
+   }
+   .smallh6{
+       font-weight:200;
+   }
+  
+
