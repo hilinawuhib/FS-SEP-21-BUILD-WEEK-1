@@ -53,12 +53,12 @@ h5{
     color:var(--spotify-grey);
 
 }
-/* @media (max-width: 500px) {
-    .see-all2{
+@media (max-width: 630px) {
+    .see-all{
         position: absolute;
         right:0;
-        left: 82%;
-        top:135%;
+        left: 72%;
+        top:50%;
         color:var(--spotify-grey);
     }
 }
@@ -70,7 +70,7 @@ h5{
         top:107%;
         color:var(--spotify-grey);
     }
-} */
+}
 
 
 
