@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap');
 :root {
     --main-font: 'Montserrat', sans-serif;
     --spotify-green: #1DB954;
@@ -13,18 +14,19 @@ h4 ,.podcast-title{
 }
 .see-all{
     position:absolute;
-    top: 0;
-    left: 94%;
+    top: 1%;
+    left: 90%;
     right: 0;
     color:var(--spotify-grey);
 }
 .images{
-width:120px;
-height: 110px;
+width:130px;
+height: 120px;
 object-fit: cover;
 margin: 15px;
+padding-left: 10px;
 box-shadow: cadetblue;
-border-radius: 10%;
+border-radius: 15%;
 }
 #round-img{
     border-radius: 50%;
@@ -46,8 +48,8 @@ h5{
 .see-all2{
     position: absolute;
     right:0;
-    left: 94%;
-    top: 70%;
+    left: 90%;
+    top: 42%;
     color:var(--spotify-grey);
 
 }
@@ -214,6 +216,45 @@ body{
     background:rgb(219, 213, 213);
     height:5px;
 }
+   /* starting point of jumbotron */
+
+   .jumbo-img {
+    max-height: 50vh;
+    object-fit: cover;
+}
+.jumbo-icon{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    color: rgb(101, 101, 233);
+    
+   
+}
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--spotify-white);
+}
+.jumbo-title{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 58px;
+    top: 65%;
+    left: 3%;
+    color: var(--spotify-white);
+    
+    
+}
+ .jumbo-parag{
+     position: absolute;
+     top: 88%;
+     left: 2%;
+     font-family: 'Rubik', sans-serif; }  
+   .jumbo-img{
+     opacity: 0.5;
+ }
+ /* end of jumbotron */
+
+
 
      /* ARTIST PAGE CSS BEGINS HERE */
 
@@ -271,6 +312,7 @@ body{
    .smallh6{
        font-weight:200;
    }
+
   
 
 /* start of button styles   */
