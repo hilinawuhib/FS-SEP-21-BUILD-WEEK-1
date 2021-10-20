@@ -14,7 +14,7 @@ h4 ,.podcast-title{
 }
 .see-all{
     position:absolute;
-    top: 1%;
+    top: 31%;
     left: 90%;
     right: 0;
     color:var(--spotify-grey);
@@ -49,28 +49,11 @@ h5{
     position: absolute;
     right:0;
     left: 90%;
-    top: 42%;
+    top: 68%;
     color:var(--spotify-grey);
 
 }
-/* @media (max-width: 500px) {
-    .see-all2{
-        position: absolute;
-        right:0;
-        left: 82%;
-        top:135%;
-        color:var(--spotify-grey);
-    }
-}
-@media (min-width: 660px) {
-    .see-all2{
-        position: absolute;
-        right:0;
-        left: 87%;
-        top:107%;
-        color:var(--spotify-grey);
-    }
-} */
+
 
 
 
@@ -417,8 +400,12 @@ table > thead > tr {
 /* marti's take on good morning section */
 
 .good-morning-container-fluid {
-    background: rgb(64,8,7);
-    background: linear-gradient(180deg, rgba(64,8,7,1) 0%, rgba(18,18,18,1) 100%);
+  
+    background: rgb(235, 93, 74);
+background: linear-gradient(180deg, rgba(171,44,28,1) 1%, rgba(8,8,9,1) 10%); 
+  
+    /* background: rgb(64,8,7);
+    background: linear-gradient(180deg, rgba(64,8,7,1) 0%, rgba(18,18,18,1) 100%); */
 }
 
 .good-morning-container-fluid h1 {
