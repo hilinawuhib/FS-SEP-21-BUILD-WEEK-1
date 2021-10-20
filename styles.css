@@ -21,7 +21,7 @@ h3 {
   width: 30px;
   border: none;
   color: white;
-  background-color: rgba(180, 176, 176, 0.493);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
 .good-morning-container-fluid,
@@ -34,6 +34,9 @@ body {
   );
 }
 
+.dropdown button {
+  background-color: rgba(0, 0, 0, 0.541);
+}
 .good-morning-main-container {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +44,10 @@ body {
 
 .good-morning-card-container {
   display: flex;
+  /* YOU CAN CHANGE THE WIDTH BASED ON ACTUAL WEBSITE */
+  width: 18%;
   max-width: 495px;
+  min-width: fit-content;
   height: 80px;
   margin: 16px 16px 16px 0;
 }
@@ -62,3 +68,105 @@ body {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
+/* MARTI NAVBAR */
+
+/* body {
+  font-family: var(--main-font);
+  font-weight: 500;
+  background-color: var(--spotify-dark-bg);
+}
+
+.navbar-main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+#main-logo {
+  max-width: 130px;
+}
+
+.navbar-main-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-main-container a {
+  color: var(--spotify-grey);
+  display: block;
+  text-decoration: none;
+}
+
+.main-links-container a,
+.secondary-links-container a,
+.install-app {
+  transition: color 0.5s;
+}
+
+.navbar-main-container a:hover {
+  color: var(--spotify-white);
+  display: block;
+}
+
+.navbar-main-container a:active {
+  color: var(--spotify-white);
+}
+
+.main-links-container,
+.secondary-links-container,
+.install-app,
+.playlist-links-container {
+  font-size: 0.8rem;
+}
+.main-links-container,
+.secondary-links-container,
+.install-app {
+  font-weight: 700;
+}
+
+.navbar-active-link {
+  background-color: #363636;
+  color: var(--spotify-white) !important;
+  border-radius: 3px;
+}
+
+.secondary-links-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--spotify-grey);
+}
+
+.main-links-container a,
+.secondary-links-container a,
+.playlist-links-container a {
+  padding: 8px 8px;
+}
+
+ion-icon {
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+#create-playlist,
+#liked-songs {
+  font-size: 18px;
+  padding: 6px 6px;
+}
+
+#create-playlist {
+  background-color: var(--spotify-white);
+  color: var(--spotify-dark-bg);
+}
+
+#liked-songs {
+  color: var(--spotify-white);
+  background: rgb(51, 17, 168);
+  background: linear-gradient(
+    135deg,
+    rgba(51, 17, 168, 1) 0%,
+    rgba(102, 101, 160, 1) 45%,
+    rgba(255, 255, 255, 1) 100%
+  );
+} */
