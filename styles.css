@@ -164,6 +164,10 @@ vertical-align: middle;
     background: linear-gradient(135deg, rgba(51,17,168,1) 0%, rgba(102,101,160,1) 45%, rgba(255,255,255,1) 100%);
 }
 
+.navbar-col {
+    background-color: black;
+}
+
 
 /* end of navbar styles */
 
@@ -387,6 +391,11 @@ span{
 }
 
 /* end of button styles   */
+
+.gradient-background-centre-section {
+    background: rgb(128,128,128);
+    background: linear-gradient(180deg, rgba(128,128,128,1) 0%, rgba(18,18,18,1) 30%);
+}
 
 
 /* marti's take on good morning section */
