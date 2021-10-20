@@ -222,22 +222,24 @@ body{
 }
    /* starting point of jumbotron */
 
-   .jumbo-img {
+.jumbo-img {
     max-height: 50vh;
     object-fit: cover;
 }
-.jumbo-icon{
+.verified-artist-container {
     position: absolute;
-    top: 45%;
+    top: 56%;
     left: 3%;
-    color: rgb(101, 101, 233);
-    
-   
+    z-index: 2;
 }
-span{
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--spotify-white);
+.verified-artist-container i {
+    color: rgb(101, 101, 233);   
 }
+.verified-artist-container span {
+    color: white;
+    font-size: 0.8rem;
+}
+
 .jumbo-title{
     position: absolute;
     font-family: 'Raleway', sans-serif;
