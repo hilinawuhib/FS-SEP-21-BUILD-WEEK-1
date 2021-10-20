@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --spotify-green: #1DB954;
+    --spotify-grey: #8a8a8a;
+    --spotify-white: #bdbbbb;
+    --spotify-dark-bg: #181818;
+    --spotify-darker-bg: #121212;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+/* start of login page styles */
+.login-main-container h5 {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+.login-main-container h6 {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.login-header {
+    border-bottom: 1px solid var(--spotify-white);
+}
+.login-header img {
+    max-width: 200px;
+}
+
+.login-main-container {
+    flex-direction: column;
+    max-width: 40vw;
+    align-items: center;
+}
+
+.full-width-btn {
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin: 7px 0;
+    font-weight: 600;
+}
+
+.or-divider {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.horizontal-line {
+    width: 42%;
+    border-top: 1px solid var(--spotify-white);
+    transform: translateY(50%);
+}
+
+#fb-btn {
+    background-color: #3E5A9B;
+    color: white;
+}
+
+#apple-btn {
+    background-color: black;
+    color: white;
+}
+
+#sign-up-btn {
+    background-color: transparent;
+    color: var(--spotify-dark-bg);
+    border: 2px solid var(--spotify-dark-bg);
+    font-weight: 500;
+}
+#fb-btn:hover, #apple-btn:hover, #sign-up-btn:hover {
+    font-size: 1.1rem;
+}
+
+
+input[type="text"], input[type="password"] {
+    border: 1px solid var(--spotify-white);
+    margin: 5px 0;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+::placeholder {
+    color: var(--spotify-white);
+}
+
+#log-in-btn-container button {
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin: 7px 0;
+    font-weight: 600;
+    background-color: var(--spotify-green);
+    color: white;
+    font-size: 0.95rem;
+}
+
+#log-in-btn-container button:hover {
+    font-size: 1rem;
+}
+
+#remember-me-checkbox-container label {
+    color: var(--spotify-white);
+}
+
+#forgot-password p {
+    color: var(--spotify-green);
+}
+
+#disclaimer-container, .login-main-container h5 {
+    border-top: 1px solid var(--spotify-white);
+    padding: 20px 2px;
+    text-align: center;
+}
+
+#disclaimer-container a {
+    color: var(--spotify-green);
+}
+
+/* Base for label styling */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: 0;
+    opacity: 0.01;
+  }
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 2.3em;
+    font-size: 1.05em;
+    line-height: 1.7;
+    cursor: pointer;
+  }
+
+  /* checkbox aspect */
+  
+  [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4em;
+    height: 1.4em;
+    border: none;
+    background-color: var(--spotify-green);
+    border-radius: 5px;
+    transition: all 0.275s;
+  }
+  /* checkbox mark aspect */
+   [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
+       content: 'X';
+       position: absolute;
+       top: .69em;
+       left: .38em;
+       font-size: 1em;
+       color: white;
+       line-height: 0;
+       transition: all 0.275s;
+   }
+   /* checkbox state change */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* end of login page styles */
