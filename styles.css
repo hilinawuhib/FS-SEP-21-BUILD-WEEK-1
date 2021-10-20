@@ -258,8 +258,17 @@ body{
    .jumbo-img{
      opacity: 0.5;
  }
+
+ 
  /* end of jumbotron */
 
+ .navbar-top-container {
+     position: absolute;
+     top: 12%;
+     left: 0;
+     margin-right: 50px;
+     z-index: 3;
+ }
 
 
      /* ARTIST PAGE CSS BEGINS HERE */
@@ -475,3 +484,38 @@ table > thead > tr {
 
 
 /* end of album jumbotron styles */
+
+
+/*start of new navbar-top*/
+.arrows-container ion-icon {
+    background: var(--spotify-darker-bg);
+    color: var(--spotify-white);
+    border-radius: 50%;
+    padding: 6px 6px;
+    font-size: 1.1rem;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.arrows-container ion-icon:nth-of-type(2) {
+    opacity: 0.7;
+}
+
+.dropdown button {
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 6px;
+    background: var(--spotify-dark-bg);
+    border: none;
+    max-width: 142px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown button img {
+    margin-right: 6px;
+}
+
+/*end of new navbar-top*/
