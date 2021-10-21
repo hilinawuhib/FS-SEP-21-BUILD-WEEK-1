@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Search!</title>
+  </head>
+  <body>
+    <!-- STARTS HERE, MAIN-SEARCH-CONTAINER WRAPS ENTIRE PAGE!!! -->
+    <div class="container mt-3 main-search-container">
+      <!-- container for top buttons and search only -->
+      <div class="container-fluid top-search-container d-flex">
+        <div class="search-buttons d-inline-flex">
+          <button class="btn rounded-circle ml-2" type="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button class="btn rounded-circle mx-2" type="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- SEARCH INPUT GOES HERE -->
+        <form class="form-inline align-self-start ml-5">
+          <input
+            class="form-control rounded-pill"
+            type="search"
+            placeholder="Artists, songs, or podcasts"
+            aria-label="Search"
+          />
+        </form>
+        <div class="btn-group">
+          <button
+            class="btn btn-dark btn-sm dropdown-toggle rounded-pill border-0"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+            martipurull
+          </button>
+          <div class="dropdown-menu">
+            <!-- DROPDOWN ACTIONS CAN BE ADDED IF NECESSARY ... -->
+          </div>
+        </div>
+      </div>
+      <h5 class="text-light mt-4">Recently Played</h5>
+
+      <!-- FIRST CONTAINER RECENTLY-PLAYED-CARD  -->
+      <div class="container-fluid d-flex">
+        <div class="card mt-3 recently-played-card" style="width: 18rem">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x-circle cancel-button-bohemian"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            />
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          <img
+            src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.f-oGofWW/SharedImage-83983.jpg?t=714c257d214b32dbb01d"
+            class="card-img-top p-2 img-fluid"
+            alt="queen"
+          />
+
+          <div class="card-body">
+            <p class="card-text font-weight-bold text-light mb-0">
+              Bohemian Rhapsody(Th...
+            </p>
+            <p class="text-secondary pt-0">Queen</p>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="text-light mt-5">Your top genres</h5>
+      <!-- SECOND CONTAINER - TOP GENRES -->
+      <div class="container-fluid">
+        <div
+          class="row top-genres-container d-flex text-light font-weight-bolder"
+        >
+          <div class="col col-sm-12 col-xl-6 dance-electric d-flex">
+            <div class="d-flex top-genres-box justify-content-between">
+              <h4 class="dance-box-header">Dance/Electronic</h4>
+              <img
+                class="top-genres-box-image"
+                src="https://edm.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTUyOTgxMDkwNDIyNzYxMDgw/marshmello.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col col-sm-12 col-xl-6 bg-danger dance-electric d-flex">
+            <div class="d-flex top-genres-box justify-content-between">
+              <h4 class="dance-box-header">Rock</h4>
+              <img
+                class="top-genres-box-image"
+                src="https://www.washingtonpost.com/resizer/vPytFeC8Jjr_NYL89ujqQs3Oh1Y=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CGEXNOH75MI6TBIBFJYSHI4MLA.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h6 class="text-light mt-5">Browse all</h6>
+
+      <div class="container-fluid justify-content-evenly last-container-body">
+        <div class="row text-light">
+          <div
+            class="
+              col col-sm-12 col-md-6 col-lg-3
+              bottom-boxes
+              first-col-podcasts
+            "
+          >
+            <h6 class="pt-2">Podcasts</h6>
+            <img
+              class="top-genres-box-image"
+              src="/Avatar-Dissect-S7.jpg"
+              alt="avatar"
+            />
+          </div>
+          <div
+            class="
+              col col-sm-12 col-md-6 col-lg-3
+              bottom-boxes
+              sec-col-madeforyou
+            "
+          >
+            <h6 class="pt-2">Made For You</h6>
+            <img
+              class="top-genres-box-image"
+              src="/c21c3e8b39084f863a2cd03ed13734ab.jpg"
+              alt="avatar"
+            />
+          </div>
+          <div
+            class="
+              col col-sm-12 col-md-6 col-lg-3
+              bottom-boxes
+              third-col-charts
+            "
+          >
+            <h6 class="pt-2">Charts</h6>
+            <img
+              class="top-genres-box-image"
+              src="/region_global_large.jpg"
+              alt="avatar"
+            />
+          </div>
+          <div
+            class="
+              col col-sm-12 col-md-6 col-lg-3
+              bottom-boxes
+              forth-col-releases
+            "
+          >
+            <h6 class="pt-2">Releases</h6>
+            <img
+              class="top-genres-box-image"
+              src="/EUrpateWsAEiHA2.jpg"
+              alt="avatar"
+            />
+          </div>
+          <div
+            class="
+              col col-sm-12 col-md-6 col-lg-3
+              bottom-boxes
+              fifth-col-discover
+            "
+          >
+            <h6 class="pt-2">Discover</h6>
+          </div>
+          <div
+            class="
+              col col-sm-12 col-md-6 col-lg-3
+              bottom-boxes
+              sixth-col-concepts
+            "
+          >
+            <h6 class="pt-2">Concepts</h6>
+          </div>
+          <div
+            class="
+              col col-sm-12 col-md-6 col-lg-3
+              bottom-boxes
+              seventh-col-hiphop
+            "
+          >
+            <h6 class="pt-2">HipHop</h6>
+          </div>
+          <div
+            class="col col-sm-12 col-md-6 col-lg-3 bottom-boxes eights-col-mood"
+          >
+            <h6 class="pt-2">Mode</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
