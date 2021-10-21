@@ -1,508 +1,603 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
 :root {
-    --main-font: 'Montserrat', sans-serif;
-    --spotify-green: #1DB954;
-    --spotify-grey: #8a8a8a;
-    --spotify-white: #EAEAEA;
-    --spotify-dark-bg: #181818;
-    --spotify-darker-bg: #121212;
+  --main-font: "Montserrat", sans-serif;
+  --spotify-green: #1db954;
+  --spotify-grey: #8a8a8a;
+  --spotify-white: #eaeaea;
+  --spotify-dark-bg: #181818;
+  --spotify-darker-bg: #121212;
 }
-h4 ,.podcast-title{
-    color: var(--spotify-white);
+h4,
+.podcast-title {
+  color: var(--spotify-white);
 }
-.see-all{
-    position:absolute;
-    top: 31%;
-    left: 90%;
-    right: 0;
-    color:var(--spotify-grey);
+.see-all {
+  position: absolute;
+  top: 31%;
+  left: 90%;
+  right: 0;
+  color: var(--spotify-grey);
 }
-.images{
-width:130px;
-height: 120px;
-object-fit: cover;
-margin: 15px;
-padding-left: 10px;
-box-shadow: cadetblue;
-border-radius: 15%;
+.images {
+  width: 130px;
+  height: 120px;
+  object-fit: cover;
+  margin: 15px;
+  padding-left: 10px;
+  box-shadow: cadetblue;
+  border-radius: 15%;
 }
-#round-img{
-    border-radius: 50%;
+#round-img {
+  border-radius: 50%;
 }
-.card{
-    background-color:rgb(36, 33, 33);
-    opacity: 0.7;
+.card {
+  background-color: rgb(36, 33, 33);
+  opacity: 0.7;
 }
-h5 ,p{
- color: var(--spotify-white);
+h5,
+p {
+  color: var(--spotify-white);
 }
-h5{
-    font-size: 18px;
+h5 {
+  font-size: 18px;
 }
-.card:hover{
-    transform: scale(1.0);
-    opacity: 1;
+.card:hover {
+  transform: scale(1);
+  opacity: 1;
 }
-.see-all2{
-    position: absolute;
-    right:0;
-    left: 90%;
-    top: 68%;
-    color:var(--spotify-grey);
-
+.see-all2 {
+  position: absolute;
+  right: 0;
+  left: 90%;
+  top: 68%;
+  color: var(--spotify-grey);
 }
-
-
-
 
 /* start of navbar styles */
 body {
-    font-family: var(--main-font);
-    font-weight: 500;
-    background-color: var(--spotify-dark-bg);
+  font-family: var(--main-font);
+  font-weight: 500;
+  background-color: var(--spotify-dark-bg);
 }
 
 .navbar-column {
-    background-color: black;
+  background-color: black;
 }
 
 .navbar-main-container {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
 }
 
 #main-logo {
-    max-width: 130px;
+  max-width: 130px;
 }
 
 .navbar-main-container div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar-main-container a {
-    color: var(--spotify-grey);
-    display: block;
-    text-decoration: none;
+  color: var(--spotify-grey);
+  display: block;
+  text-decoration: none;
 }
 
-.main-links-container a, .secondary-links-container a, .install-app {
-    transition: color 0.5s;
+.main-links-container a,
+.secondary-links-container a,
+.install-app {
+  transition: color 0.5s;
 }
 
 .navbar-main-container a:hover {
-    color: var(--spotify-white);
-    display: block;
+  color: var(--spotify-white);
+  display: block;
 }
 
 .navbar-main-container a:active {
-    color: var(--spotify-white);
+  color: var(--spotify-white);
 }
 
-.main-links-container, .secondary-links-container, .install-app, .playlist-links-container {
-    font-size: 0.8rem;
+.main-links-container,
+.secondary-links-container,
+.install-app,
+.playlist-links-container {
+  font-size: 0.8rem;
 }
-.main-links-container, .secondary-links-container, .install-app {
-    font-weight: 700;
+.main-links-container,
+.secondary-links-container,
+.install-app {
+  font-weight: 700;
 }
 
 .navbar-active-link {
-    background-color: #363636;
-    color: var(--spotify-white)!important;
-    border-radius: 3px;
+  background-color: #363636;
+  color: var(--spotify-white) !important;
+  border-radius: 3px;
 }
 
 .secondary-links-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--spotify-grey);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--spotify-grey);
 }
 
-.main-links-container a, .secondary-links-container a, .playlist-links-container a {
-    padding: 8px 8px;    
+.main-links-container a,
+.secondary-links-container a,
+.playlist-links-container a {
+  padding: 8px 8px;
 }
 
 ion-icon {
-font-size: 28px;
-vertical-align: middle;
+  font-size: 28px;
+  vertical-align: middle;
 }
 
-#create-playlist, #liked-songs {
-    font-size: 18px;
-    padding: 6px 6px;
+#create-playlist,
+#liked-songs {
+  font-size: 18px;
+  padding: 6px 6px;
 }
 
 #create-playlist {
-    background-color: var(--spotify-white);
-    color: var(--spotify-dark-bg);
+  background-color: var(--spotify-white);
+  color: var(--spotify-dark-bg);
 }
 
 #liked-songs {
-    color: var(--spotify-white);
-    background: rgb(51,17,168);
-    background: linear-gradient(135deg, rgba(51,17,168,1) 0%, rgba(102,101,160,1) 45%, rgba(255,255,255,1) 100%);
+  color: var(--spotify-white);
+  background: rgb(51, 17, 168);
+  background: linear-gradient(
+    135deg,
+    rgba(51, 17, 168, 1) 0%,
+    rgba(102, 101, 160, 1) 45%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .navbar-col {
-    background-color: black;
+  background-color: black;
 }
-
 
 /* end of navbar styles */
 
-footer{
-    background-color:var(--spotify-dark-bg);
-    color: var(--spotify-white);
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    font-family: var(--main-font);
-    
-   
-    
+footer {
+  background-color: var(--spotify-dark-bg);
+  color: var(--spotify-white);
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  font-family: var(--main-font);
 }
-.container-fluid-footer{
-    align-items: flex-end;
-    font-family: var(--main-font);
+.container-fluid-footer {
+  align-items: flex-end;
+  font-family: var(--main-font);
 }
-.bi{
-    color: var(--spotify-white);
-    font-family: var(--main-font);
-   
+.bi {
+  color: var(--spotify-white);
+  font-family: var(--main-font);
 }
-.progress{
-    z-index: 1;
-    font-family: var(--main-font);
-
+.progress {
+  z-index: 1;
+  font-family: var(--main-font);
 }
-.main-container2{
-    
-    justify-items: center;
+.main-container2 {
+  justify-items: center;
 }
-body{
-    background-color:var(--spotify-dark-bg) ;
+body {
+  background-color: var(--spotify-dark-bg);
 }
-.center{
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+.center {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
-.slide{
-    width:100%;
-    background:rgb(61, 57, 57);
-    height:5px;
+.slide {
+  width: 100%;
+  background: rgb(61, 57, 57);
+  height: 5px;
 }
-.range{
-    width:10%;
-    background:rgb(219, 213, 213);
-    height:5px;
+.range {
+  width: 10%;
+  background: rgb(219, 213, 213);
+  height: 5px;
 }
-   /* starting point of jumbotron */
+/* starting point of jumbotron */
 
 .jumbo-img {
-    max-height: 50vh;
-    object-fit: cover;
+  max-height: 50vh;
+  object-fit: cover;
 }
 .verified-artist-container {
-    position: absolute;
-    top: 56%;
-    left: 3%;
-    z-index: 2;
+  position: absolute;
+  top: 56%;
+  left: 3%;
+  z-index: 2;
 }
 .verified-artist-container i {
-    color: rgb(101, 101, 233);   
+  color: rgb(101, 101, 233);
 }
 .verified-artist-container span {
-    color: white;
-    font-size: 0.8rem;
+  color: white;
+  font-size: 0.8rem;
 }
 
-.jumbo-title{
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-size: 58px;
-    top: 65%;
-    left: 3%;
-    color: var(--spotify-white);
-    
-    
+.jumbo-title {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 58px;
+  top: 65%;
+  left: 3%;
+  color: var(--spotify-white);
 }
- .jumbo-parag{
-     position: absolute;
-     top: 88%;
-     left: 2%;
-     font-family: 'Rubik', sans-serif; }  
-   .jumbo-img{
-     opacity: 0.5;
- }
+.jumbo-parag {
+  position: absolute;
+  top: 88%;
+  left: 2%;
+  font-family: "Rubik", sans-serif;
+}
+.jumbo-img {
+  opacity: 0.5;
+}
 
- 
- /* end of jumbotron */
+/* end of jumbotron */
 
- .navbar-top-container {
-     position: absolute;
-     top: 12%;
-     left: 0;
-     margin-right: 50px;
-     z-index: 3;
- }
+.navbar-top-container {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  margin-right: 50px;
+  z-index: 3;
+}
 
+/* ARTIST PAGE CSS BEGINS HERE */
 
-     /* ARTIST PAGE CSS BEGINS HERE */
+.posted {
+  font-weight: 100;
+  font-size: smaller;
+}
 
-
-.posted{
-    font-weight: 100;
-    font-size: smaller;
+.smallh6,
+th,
+td,
+h6 {
+  font-family: var(--main-font);
+  color: var(--spotify-white);
 }
-   
-.smallh6,th,td,h6{
-    font-family: var(--main-font);
-    color: var(--spotify-white);
-    
+.smallh6 {
+  font-weight: 200;
 }
-.smallh6{
- font-weight: 200;   
+.img-table {
+  height: 60px;
+  width: 60px;
 }
-.img-table{
-    height: 60px;
-    width: 60px;
+.artist-pick-text {
+  float: right;
 }
-.artist-pick-text{
-    float: right;
+.artist-pick-text {
+  color: var(--spotify-grey);
+  font-weight: lighter;
 }
-.artist-pick-text{
-    color: var(--spotify-grey);
-    font-weight:lighter;
+.artist-pick-image {
+  height: 110px;
+  width: 110px;
 }
-.artist-pick-image{
-    height: 110px;
-    width: 110px;
+.small-image {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
-.small-image{
-    height: 30px;
-    width:30px;
-    border-radius: 50%;
-}
-.playlist{
-    color: var(--spotify-white);
-    font-weight: 100;
-    font-size: smaller;
+.playlist {
+  color: var(--spotify-white);
+  font-weight: 100;
+  font-size: smaller;
 }
 
 table > thead > tr {
-    border-bottom: 1px solid var(--spotify-grey);
+  border-bottom: 1px solid var(--spotify-grey);
 }
 
- /* ARTIST PAGE CSS ENDS  HERE */
+/* ARTIST PAGE CSS ENDS  HERE */
 
 /* ALBUM PAGE CSS */
 
-   .table{
-       color: var(--spotify-white);
-       font-family: var(--main-font);
-
-   }
-   th{
-    align-items: flex-start;
-   }
-   .smallh6{
-       font-weight:200;
-   }
-
-  
+.table {
+  color: var(--spotify-white);
+  font-family: var(--main-font);
+}
+th {
+  align-items: flex-start;
+}
+.smallh6 {
+  font-weight: 200;
+}
 
 /* start of button styles   */
 .btn-playground {
-    width: 50vw;
-    height: 100vh;
+  width: 50vw;
+  height: 100vh;
 }
 .play-btn {
-    width: 60px;
-    height: 60px;
-    padding: 13px;
-    background-color: var(--spotify-green);
-    border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 13px;
+  background-color: var(--spotify-green);
+  border-radius: 50%;
 }
 .play-btn:hover {
-    width: 65px;
-    height: 65px;
-    padding: 18px;
+  width: 65px;
+  height: 65px;
+  padding: 18px;
 }
 
 .play-triangle {
-    width: 21px;
-    height: 21px;
-    margin-left: 5px;
-    align-self: center;
+  width: 21px;
+  height: 21px;
+  margin-left: 5px;
+  align-self: center;
 }
 .pause-bars {
-    width: 21px;
-    height: 23px;
-    align-self: center;
+  width: 21px;
+  height: 23px;
+  align-self: center;
 }
 
 .secondary-button-group {
-    color: var(--spotify-white);
+  color: var(--spotify-white);
 }
 
 .like-album-heart {
-    align-self: center;
+  align-self: center;
 }
 
 .like-album-heart ion-icon {
-    font-size: 38px;
+  font-size: 38px;
   --ionicon-stroke-width: 16px;
 }
 
 .download-album {
-    align-self: center;
+  align-self: center;
 }
 
 .download-album ion-icon {
-    font-size: 38px;
+  font-size: 38px;
   --ionicon-stroke-width: 16px;
 }
 
 .three-dots {
-    align-self: center;
+  align-self: center;
 }
 
 .three-dots img {
-    width: 38px;
-    height: 38px;
+  width: 38px;
+  height: 38px;
 }
 
 .follow-btn {
-    background: transparent;
-    color: var(--spotify-white);
-    border: 1px solid var(--spotify-grey);
-    border-radius: 2px;
-    padding: 0px 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
+  background: transparent;
+  color: var(--spotify-white);
+  border: 1px solid var(--spotify-grey);
+  border-radius: 2px;
+  padding: 0px 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 /* end of button styles   */
 
 .gradient-background-centre-section {
-    background: rgb(128,128,128);
-    background: linear-gradient(180deg, rgba(128,128,128,1) 0%, rgba(18,18,18,1) 30%);
+  background: rgb(128, 128, 128);
+  background: linear-gradient(
+    180deg,
+    rgba(128, 128, 128, 1) 0%,
+    rgba(18, 18, 18, 1) 30%
+  );
 }
-
 
 /* marti's take on good morning section */
 
 .good-morning-container-fluid {
-  
-    background: rgb(235, 93, 74);
-background: linear-gradient(180deg, rgba(171,44,28,1) 1%, rgba(8,8,9,1) 10%); 
-  
-    /* background: rgb(64,8,7);
+  background: rgb(235, 93, 74);
+  background: linear-gradient(
+    180deg,
+    rgba(171, 44, 28, 1) 1%,
+    rgba(8, 8, 9, 1) 10%
+  );
+
+  /* background: rgb(64,8,7);
     background: linear-gradient(180deg, rgba(64,8,7,1) 0%, rgba(18,18,18,1) 100%); */
 }
 
 .good-morning-container-fluid h1 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .good-morning-main-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .good-morning-card-container {
-    display: flex;
-    min-width: 300px;
-    height: 80px;
-    margin: 16px 16px 16px 0;
+  display: flex;
+  min-width: 300px;
+  height: 80px;
+  margin: 16px 16px 16px 0;
 }
 
 .good-morning-card-container img {
-    width: 80px;
-    height: 80px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+  width: 80px;
+  height: 80px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .good-morning-card-container div {
-    width: 100%;
-    background-color: #8a8a8a25;
-    color: white;
-    padding: 33px 16px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+  width: 100%;
+  background-color: #8a8a8a25;
+  color: white;
+  padding: 33px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 /* start of album jumbotron styles */
 
 .album-jumbotron-don {
-    background: rgb(166,59,135);
-    background: linear-gradient(180deg, rgba(166,59,135,1) 0%, rgba(88,29,72,1) 55%);
-    color: white;
+  background: rgb(166, 59, 135);
+  background: linear-gradient(
+    180deg,
+    rgba(166, 59, 135, 1) 0%,
+    rgba(88, 29, 72, 1) 55%
+  );
+  color: white;
 }
 
 .album-jumbotron-don h1 {
-    margin: 0 0 16.1px 0;
-    font-weight: 700;
+  margin: 0 0 16.1px 0;
+  font-weight: 700;
 }
 
 .bohemian-album-cover {
-    height: 192px;
-    width: 192px;
-    box-shadow: 3px 3px 20px rgb(65, 65, 65), -3px -3px 20px rgb(65, 65, 65);
+  height: 192px;
+  width: 192px;
+  box-shadow: 3px 3px 20px rgb(65, 65, 65), -3px -3px 20px rgb(65, 65, 65);
 }
 
 .artist-profile-pic {
-    max-width: 25px;
-    border-radius: 50%;
+  max-width: 25px;
+  border-radius: 50%;
 }
-
-
 
 /* end of album jumbotron styles */
 
-
 /*start of new navbar-top*/
 .arrows-container ion-icon {
-    background: var(--spotify-darker-bg);
-    color: var(--spotify-white);
-    border-radius: 50%;
-    padding: 6px 6px;
-    font-size: 1.1rem;
-    margin-left: 6px;
-    margin-right: 6px;
+  background: var(--spotify-darker-bg);
+  color: var(--spotify-white);
+  border-radius: 50%;
+  padding: 6px 6px;
+  font-size: 1.1rem;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .arrows-container ion-icon:nth-of-type(2) {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .dropdown button {
-    border-radius: 40px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 6px 6px;
-    background: var(--spotify-dark-bg);
-    border: none;
-    max-width: 142px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 6px;
+  background: var(--spotify-dark-bg);
+  border: none;
+  max-width: 142px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dropdown button img {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 /*end of new navbar-top*/
+
+/* flipping card css */
+.card-container {
+  font-family: var(--main-font);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  text-align: center;
+  transform-style: preserve-3d;
+  color: var(--spotify-white);
+}
+
+.card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  border: 1px solid #111010;
+  perspective: 2000px;
+}
+
+.front {
+  background-color: var(--spotify-dark-bg);
+  color: var(--spotify-white);
+}
+
+.back {
+  background-color: var(--spotify-grey);
+  color: gold;
+  transform: rotateX(180deg);
+  text-align: center;
+}
+
+.card:hover .card-container {
+  transform: rotateX(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* rating css */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+input {
+  display: none;
+}
+.rating-text {
+  margin-top: 40px;
+}
+
+label {
+  position: relative;
+  width: 20px;
+  font-size: 40px;
+  margin: 5px;
+  color: gold;
+  cursor: pointer;
+  align-items: center;
+}
+
+label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+
+label:hover:before,
+label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+input:checked ~ label:before {
+  opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+  opacity: 0.4;
+}
