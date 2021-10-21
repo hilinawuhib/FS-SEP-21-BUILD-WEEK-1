@@ -54,6 +54,10 @@ h5{
 
 }
 
+.centre-section-container {
+    background: var(--spotify-darker-bg);
+}
+
 
 
 
@@ -61,21 +65,22 @@ h5{
 body {
     font-family: var(--main-font);
     font-weight: 500;
-    background-color: var(--spotify-dark-bg);
+    background: var(--spotify-dark-bg);
 }
 
 .navbar-column {
-    background-color: black;
+    background: black;
 }
 
 .navbar-main-container {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background: transparent;
 }
 
-#main-logo {
+#main-logo-white, #main-logo-black {
     max-width: 130px;
+    padding-left: 2%;
 }
 
 .navbar-main-container div {
@@ -110,7 +115,7 @@ body {
 }
 
 .navbar-active-link {
-    background-color: #363636;
+    background: var(--spotify-grey);
     color: var(--spotify-white)!important;
     border-radius: 3px;
 }
@@ -127,8 +132,8 @@ body {
 }
 
 ion-icon {
-font-size: 28px;
-vertical-align: middle;
+    font-size: 28px;
+    vertical-align: middle;
 }
 
 #create-playlist, #liked-songs {
@@ -137,7 +142,7 @@ vertical-align: middle;
 }
 
 #create-playlist {
-    background-color: var(--spotify-white);
+    background: var(--spotify-white);
     color: var(--spotify-dark-bg);
 }
 
@@ -147,12 +152,9 @@ vertical-align: middle;
     background: linear-gradient(135deg, rgba(51,17,168,1) 0%, rgba(102,101,160,1) 45%, rgba(255,255,255,1) 100%);
 }
 
-.navbar-col {
-    background-color: black;
-}
-
 
 /* end of navbar styles */
+
 
 footer{
     background-color:var(--spotify-dark-bg);
@@ -391,21 +393,17 @@ table > thead > tr {
 
 /* end of button styles   */
 
-.gradient-background-centre-section {
+/* .gradient-background-centre-section {
     background: rgb(128,128,128);
     background: linear-gradient(180deg, rgba(128,128,128,1) 0%, rgba(18,18,18,1) 30%);
-}
+} */
 
 
 /* marti's take on good morning section */
 
 .good-morning-container-fluid {
-  
-    background: rgb(235, 93, 74);
-background: linear-gradient(180deg, rgba(171,44,28,1) 1%, rgba(8,8,9,1) 10%); 
-  
-    /* background: rgb(64,8,7);
-    background: linear-gradient(180deg, rgba(64,8,7,1) 0%, rgba(18,18,18,1) 100%); */
+    background: rgb(171,44,28);
+    background: linear-gradient(180deg, rgba(171,44,28,1) 0%, rgba(18,18,18,1) 50%);
 }
 
 .good-morning-container-fluid h1 {
@@ -506,3 +504,60 @@ background: linear-gradient(180deg, rgba(171,44,28,1) 1%, rgba(8,8,9,1) 10%);
 }
 
 /*end of new navbar-top*/
+
+/* start of light-mode toggle */
+
+.dropdown-and-light-toggle-group>button {
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 6px;
+    background: var(--spotify-dark-bg);
+    color: var(--spotify-white);
+    border: none;   
+}
+
+.light-mode {
+    background: rgb(234,234,234);
+    background: linear-gradient(270deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 50%);
+}
+
+.main-links-container.light-mode, .secondary-links-container.light-mode, .playlist-links-container.light-mode {
+    border-bottom: none;
+    box-shadow: 3px 3px 10px var(--spotify-grey);
+}
+
+.light-mode a, .light-mode h1, .light-mode h4, .light-mode h5, .light-mode h6, .light-mode p {
+    color: black;
+}
+
+.light-mode a:hover {
+    color: rgb(102, 102, 102);
+}
+
+.light-mode .spotify-active-link {
+    background-color: var(--spotify-grey);
+    border-radius: 5px;
+}
+
+.good-morning-container-fluid.light-mode, .light-mode.centre-section-container {
+    background: rgb(234,234,234);
+    background: linear-gradient(270deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 50%);
+}
+
+.navbar-column.light-mode {
+    background: rgb(234,234,234);
+    background: linear-gradient(90deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 50%);
+}
+
+.good-morning-container-fluid.light-mode .good-morning-main-container .good-morning-card-container, .light-mode .card.h-100, .light-mode .card.h-100 h5 {
+    background: #383838;
+    opacity: 1;
+    color: var(--spotify-white);
+}
+
+.light-mode .navbar-active-link {
+    background: rgb(102, 102, 102);
+}
+
+/* end of light-mode toggle */
