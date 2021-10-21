@@ -527,7 +527,7 @@ table > thead > tr {
     box-shadow: 3px 3px 10px var(--spotify-grey);
 }
 
-.light-mode a, .light-mode h1, .light-mode h4, .light-mode h5, .light-mode h6, .light-mode p {
+.light-mode a, .light-mode h1, .light-mode h4, .light-mode h5, .light-mode h6, .light-mode p, .follow-btn.light-mode, .table.light-mode td, .table.light-mode th, .secondary-button-group.light-mode ion-icon {
     color: black;
 }
 
@@ -558,6 +558,10 @@ table > thead > tr {
 
 .light-mode .navbar-active-link {
     background: rgb(102, 102, 102);
+}
+
+.follow-btn.light-mode {
+    background: var(--spotify-grey);
 }
 
 /* end of light-mode toggle */
