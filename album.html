@@ -18,10 +18,12 @@
 
   <!-- start of marti's navbar -->
   <div class="row">
-    <div class="col-2 navbar-col">
-      <div class="container navbar-main-container">
+    <div class="col-2 navbar-column">
+      <div class="container navbar-main-container sticky-top">
         <div class="logo-container">
-          <img id="main-logo" class="img-fluid mt-4 mb-4" src="./mp_assets/Spotify_Logo_RGB_White.png" alt="">
+          <img id="main-logo-white" class="img-fluid mt-4 mb-4" src="./mp_assets/Spotify_Logo_RGB_White.png" alt="">
+          <img id="main-logo-black" class="img-fluid mt-4 mb-4 d-none" src="./mp_assets/Spotify_Logo_CMYK_Black.png"
+            alt="">
         </div>
         <div class="main-links-container">
           <a class="navbar-active-link" href="#">
@@ -74,21 +76,27 @@
       <!-- JUMBOTRON START HERE -->
       <div class="jumbotron jumbotron-fluid album-jumbotron-don pb-3">
         <!-- navbar-top starts -->
-        <div class="container d-flex justify-content-between mt-n4 mb-5 px-5">
+        <div class="container-fluid d-flex justify-content-between mt-n4 mb-5 px-5">
           <div class="arrows-container">
             <ion-icon name="chevron-back-outline"></ion-icon>
             <ion-icon name="chevron-forward-outline"></ion-icon>
           </div>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="artist-profile-pic"
-                src="./images/Sherlock_Holmes_profilepic.jpeg" alt="">
-              <span>sherlockholmes</span>
+          <div class="dropdown-and-light-toggle-group d-flex">
+            <button class="mr-3" onclick="toggleLightModeAlbum()">
+              <ion-icon id="sun-icon" class="" name="sunny-outline"></ion-icon>
+              <ion-icon id="moon-icon" class="d-none" name="moon-outline"></ion-icon>
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Account</a>
-              <a class="dropdown-item" href="#">Profile</a>
-              <a class="dropdown-item" href="#">Log out</a>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="artist-profile-pic"
+                  src="./images/Sherlock_Holmes_profilepic.jpeg" alt="">
+                <span>sherlockholmes</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Account</a>
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Log out</a>
+              </div>
             </div>
           </div>
         </div>
@@ -119,11 +127,9 @@
       <div class="row ml-1 mb-4">
         <div class="col-2 mt-n1">
           <div class="play-button-group d-flex">
-            <div class="play-btn d-flex justify-content-center mr-5">
+            <div class="play-btn d-flex justify-content-center mr-5" onclick="playPauseToggle()">
               <img class="play-triangle" src="./mp_assets/spotify play triangle.svg" alt="">
               <img class="pause-bars d-none" src="./mp_assets/spotify pause bars bigger.svg" alt="">
-              <!-- <ion-icon name="play"></ion-icon> -->
-              <!-- <div class="play-btn-triangle"></div> -->
             </div>
           </div>
         </div>
@@ -136,7 +142,8 @@
               <ion-icon class="mr-5" name="arrow-down-circle-outline"></ion-icon>
             </div>
             <div class="three-dots">
-              <img src="./mp_assets/three-dots.svg" alt="">
+              <img id="three-dots-white" class="" src="./mp_assets/three-dots.svg" alt="">
+              <img id="three-dots-black" class="d-none" src="./mp_assets/three-dots-black.svg" alt="">
             </div>
           </div>
         </div>
@@ -426,7 +433,7 @@
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
           -->
-
+    <script src="app.js"></script>
 
 </body>
 

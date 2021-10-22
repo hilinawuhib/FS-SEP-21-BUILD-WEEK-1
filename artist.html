@@ -20,10 +20,12 @@
 
   <!-- start of marti's navbar -->
   <div class="row">
-    <div class="col-2 px-0 navbar-col">
-      <div class="container navbar-main-container">
+    <div class="col-2 px-0 navbar-column">
+      <div class="container navbar-main-container sticky-top">
         <div class="logo-container">
-          <img id="main-logo" class="img-fluid mt-4 mb-4" src="./mp_assets/Spotify_Logo_RGB_White.png" alt="">
+          <img id="main-logo-white" class="img-fluid mt-4 mb-4" src="./mp_assets/Spotify_Logo_RGB_White.png" alt="">
+          <img id="main-logo-black" class="img-fluid mt-4 mb-4 d-none" src="./mp_assets/Spotify_Logo_CMYK_Black.png"
+            alt="">
         </div>
         <div class="main-links-container">
           <a class="navbar-active-link" href="#">
@@ -79,21 +81,27 @@
       <div class="jumbotron-fluid">
         <div class="position-relative">
           <!-- navbar-top starts -->
-          <div class="navbar-top-container container d-flex justify-content-between mt-n4 mb-5 px-5">
+          <div class="navbar-top-container container-fluid d-flex justify-content-between mt-n4 mb-5 px-5">
             <div class="arrows-container">
               <ion-icon name="chevron-back-outline"></ion-icon>
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </div>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="artist-profile-pic"
-                  src="./images/Sherlock_Holmes_profilepic.jpeg" alt="">
-                <span>sherlockholmes</span>
+            <div class="dropdown-and-light-toggle-group d-flex">
+              <button class="mr-3" onclick="toggleLightModeArtist()">
+                <ion-icon id="sun-icon" class="" name="sunny-outline"></ion-icon>
+                <ion-icon id="moon-icon" class="d-none" name="moon-outline"></ion-icon>
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Account</a>
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Log out</a>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="artist-profile-pic"
+                    src="./images/Sherlock_Holmes_profilepic.jpeg" alt="">
+                  <span>sherlockholmes</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Account</a>
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </div>
               </div>
             </div>
           </div>
@@ -118,116 +126,115 @@
 
 
 
-      <div class="col-10">
 
 
 
-        <!-- BUTTONS START HERE  -->
-        <div class="container mt-5 mb-5">
-          <div class="row">
-            <div class="col-3 mt-n1">
-              <div class="play-button-group d-flex">
-                <div class="play-btn d-flex justify-content-center mr-5">
-                  <img class="play-triangle" src="./mp_assets/spotify play triangle.svg" alt="">
-                  <img class="pause-bars d-none" src="./mp_assets/spotify pause bars bigger.svg" alt="">
-                  <!-- <ion-icon name="play"></ion-icon> -->
-                  <!-- <div class="play-btn-triangle"></div> -->
-                </div>
+      <!-- BUTTONS START HERE  -->
+      <div class="container-fluid mt-5 mb-5">
+        <div class="row">
+          <div class="col-3 mt-n1">
+            <div class="play-button-group d-flex">
+              <div class="play-btn d-flex justify-content-center mr-5" onclick="playPauseToggle()"">
+                  <img class=" play-triangle" src="./mp_assets/spotify play triangle.svg" alt="">
+                <img class="pause-bars d-none" src="./mp_assets/spotify pause bars bigger.svg" alt="">
+                <!-- <ion-icon name="play"></ion-icon> -->
+                <!-- <div class="play-btn-triangle"></div> -->
               </div>
             </div>
-            <div class="col-9 ml-n5 mt-2">
-              <div class="secondary-button-group d-flex">
-                <button class="follow-btn mr-5">FOLLOW</button>
-                <div class="three-dots">
-                  <img src="./mp_assets/three-dots.svg" alt="">
-                </div>
+          </div>
+          <div class="col-9 ml-n5 mt-2">
+            <div class="secondary-button-group d-flex">
+              <button class="follow-btn mr-5">FOLLOW</button>
+              <div class="three-dots">
+                <img id="three-dots-white" class="" src="./mp_assets/three-dots.svg" alt="">
+                <img id="three-dots-black" class="d-none" src="./mp_assets/three-dots-black.svg" alt="">
               </div>
             </div>
           </div>
         </div>
-        <!-- BUTTONS END HERE -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-10">
-              <!-- TABLE STARTS HERE -->
-              <h5>POPULAR</h5>
-              <table class="table table-borderless table-transparent">
-                <tbody>
-                  <tr>
-                    <th scope="col-1">1</th>
-                    <td scope="col-2"><img class="img-table"
-                        src="https://i.scdn.co/image/ab67616d0000b2737bf7ee0ed15bef2699900a6b" alt=""></td>
-                    <td scope="col-4">Another one bites the dust-Remastered </td>
-                    <td scope="col-4">1,031,238,772</td>
-                    <td scope="col-1">3:25</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="col-1">2</th>
-                    <td scope="col-2"><img class="img-table"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlAiOM3bQ9vpy5Weszj_u5UAfCgMhNiDzYrA&usqp=CAU"
-                        alt=""></td>
-                    <td scope="col-4"> Bohemian rhapsody-Remastered</td>
-                    <td scope="col-4">1,437,258,132 </td>
-                    <td scope="col-1">3:16</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="col-1">3</th>
-                    <td scope="col-2"><img class="img-table "
-                        src="https://ecdn.teacherspayteachers.com/thumbitem/Recorder-Pop-Song-Series-Queen-Don-t-Stop-Me-Now-Arrangement-5298400-1597055661/original-5298400-1.jpg"
-                        alt=""></td>
-                    <td scope="col-4">Don't stop me now-Remastered </td>
-                    <td scope="col-4">900,154,654 </td>
-                    <td scope="col-1">3:56</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="col-1">4</th>
-                    <td scope="col-2"><img class="img-table"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLYg8aDM9khQIt3kZPvH4S8l9whnbtY9ODQ&usqp=CAU"
-                        alt=""></td>
-                    <td scope="col-4">Under pressure-Remastered </td>
-                    <td scope="col-4">524,654,987 </td>
-                    <td scope="col-1">5:54</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="col-1">5</th>
-                    <td scope="col-2"><img class="img-table"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_nC7vSrsj1FoZwoQ9iTf4rzj8k7AE4y-SA&usqp=CAU"
-                        alt=""></td>
-                    <td scope="col-4">we will rock you-Remastered </td>
-                    <td scope="col-4">1,654,984,785 </td>
-                    <td scope="col-1">5:54</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5>see more</h5>
-              <br>
-              <h4>popular releases</h4>
-            </div>
-            <div class="col-2">
-              <h5>Artist Pick</h5>
-              <div class=" artist-pick d-flex mt-3">
-                <div class="artist-pick-image">
-                  <img class="img-table"
-                    src="https://ecdn.teacherspayteachers.com/thumbitem/Recorder-Pop-Song-Series-Queen-Don-t-Stop-Me-Now-Arrangement-5298400-1597055661/original-5298400-1.jpg"
-                    alt="">
-                </div>
-                <div class=" artist-pick-text">
-                  <div class="d-flex">
-                    <img class="small-image"
+      </div>
+      <!-- BUTTONS END HERE -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10">
+            <!-- TABLE STARTS HERE -->
+            <h5>POPULAR</h5>
+            <table class="table table-borderless table-transparent">
+              <tbody>
+                <tr>
+                  <th scope="col-1">1</th>
+                  <td scope="col-2"><img class="img-table"
+                      src="https://i.scdn.co/image/ab67616d0000b2737bf7ee0ed15bef2699900a6b" alt=""></td>
+                  <td scope="col-4">Another one bites the dust-Remastered </td>
+                  <td scope="col-4">1,031,238,772</td>
+                  <td scope="col-1">3:25</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="col-1">2</th>
+                  <td scope="col-2"><img class="img-table"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlAiOM3bQ9vpy5Weszj_u5UAfCgMhNiDzYrA&usqp=CAU"
+                      alt=""></td>
+                  <td scope="col-4"> Bohemian rhapsody-Remastered</td>
+                  <td scope="col-4">1,437,258,132 </td>
+                  <td scope="col-1">3:16</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="col-1">3</th>
+                  <td scope="col-2"><img class="img-table "
+                      src="https://ecdn.teacherspayteachers.com/thumbitem/Recorder-Pop-Song-Series-Queen-Don-t-Stop-Me-Now-Arrangement-5298400-1597055661/original-5298400-1.jpg"
+                      alt=""></td>
+                  <td scope="col-4">Don't stop me now-Remastered </td>
+                  <td scope="col-4">900,154,654 </td>
+                  <td scope="col-1">3:56</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="col-1">4</th>
+                  <td scope="col-2"><img class="img-table"
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLYg8aDM9khQIt3kZPvH4S8l9whnbtY9ODQ&usqp=CAU"
-                      alt="">
-                    <h6 class="posted">posted by Queen</h6>
-                  </div>
-                  <div class="d-flex">
-                    <h6 class="queen">queen best of</h6>
-                  </div>
-                  <h6 class="playlist">Playlist</h6>
+                      alt=""></td>
+                  <td scope="col-4">Under pressure-Remastered </td>
+                  <td scope="col-4">524,654,987 </td>
+                  <td scope="col-1">5:54</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="col-1">5</th>
+                  <td scope="col-2"><img class="img-table"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_nC7vSrsj1FoZwoQ9iTf4rzj8k7AE4y-SA&usqp=CAU"
+                      alt=""></td>
+                  <td scope="col-4">we will rock you-Remastered </td>
+                  <td scope="col-4">1,654,984,785 </td>
+                  <td scope="col-1">5:54</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <h5>see more</h5>
+            <br>
+            <h4>popular releases</h4>
+          </div>
+          <div class="col-2">
+            <h5>Artist Pick</h5>
+            <div class=" artist-pick d-flex mt-3">
+              <div class="artist-pick-image">
+                <img class="img-table"
+                  src="https://ecdn.teacherspayteachers.com/thumbitem/Recorder-Pop-Song-Series-Queen-Don-t-Stop-Me-Now-Arrangement-5298400-1597055661/original-5298400-1.jpg"
+                  alt="">
+              </div>
+              <div class=" artist-pick-text">
+                <div class="d-flex">
+                  <img class="small-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLYg8aDM9khQIt3kZPvH4S8l9whnbtY9ODQ&usqp=CAU"
+                    alt="">
+                  <h6 class="posted">posted by Queen</h6>
                 </div>
+                <div class="d-flex">
+                  <h6 class="queen">queen best of</h6>
+                </div>
+                <h6 class="playlist">Playlist</h6>
               </div>
             </div>
           </div>
@@ -420,7 +427,7 @@
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
           -->
 
-
+  <script src="app.js"></script>
 </body>
 
 </html>
