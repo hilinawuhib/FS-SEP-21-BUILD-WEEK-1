@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/searchStyle.css" />
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Search!</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-2 navbar-column">
+      <div class="container navbar-main-container sticky-top">
+        <div class="logo-container">
+          <img id="main-logo-white" class="img-fluid mt-4 mb-4" src="./mp_assets/Spotify_Logo_RGB_White.png" alt="">
+          <img id="main-logo-black" class="img-fluid mt-4 mb-4 d-none" src="./mp_assets/Spotify_Logo_CMYK_Black.png"
+            alt="">
+        </div>
+        <div class="main-links-container ">
+          <a class="navbar-active-link" href="#">
+            <ion-icon class="icon-fill mr-3" name="home"></ion-icon> Home
+          </a>
+          <a href="#">
+            <ion-icon class="icon-outline mr-3" name="search-outline"></ion-icon> Search
+          </a>
+          <a href="#">
+            <ion-icon class="icon-outline mr-3" name="library-outline"></ion-icon> Library
+          </a>
+        </div>
+        <div class="secondary-links-container ">
+          <a href="#">
+            <ion-icon id="create-playlist" class="mr-3" name="add"></ion-icon> Create Playlist
+          </a>
+          <a href="#">
+            <ion-icon id="liked-songs" class="mr-3" name="heart"></ion-icon> Liked songs
+          </a>
+        </div>
+        <div class="playlist-links-container">
+          <a href="#">Funky Heavy Bluesy</a>
+          <a href="#">Your Top Songs 2020</a>
+          <a href="#">In Love With You</a>
+          <a href="#">This Is Rod Stewart</a>
+          <a href="#">FRANCHISE ft. Young Thug</a>
+          <a href="#">Your Top Songs 2019</a>
+          <a href="#">Palleggio</a>
+          <a href="#">This Is Joe Bonamassa</a>
+          <a href="#">Jun19</a>
+          <a href="#">Jack 30th Party 2</a>
+          <a href="#">Jack 30th Party</a>
+          <a href="#">This Is Opeth</a>
+          <a href="#">Metal Ballads</a>
+          <a href="#">New Playlist</a>
+          <a href="#">Your Top Songs 2018</a>
+          <a href="#">Jazz Classics Blue Note Edition</a>
+
+          <a class="install-app mt-5" href="#">
+            <ion-icon name="arrow-down-circle-outline"></ion-icon> Install App
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-10">
+      <!-- STARTS HERE, MAIN-SEARCH-CONTAINER WRAPS ENTIRE PAGE!!! -->
+      <div class="container mt-3 main-search-container">
+        <!-- container for top buttons and search only -->
+        <div class="container-fluid top-search-container d-flex sticky-top">
+          <div class="search-buttons d-inline-flex">
+            <button class="btn rounded-circle ml-2" type="btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+              </svg>
+            </button>
+            <button class="btn rounded-circle mx-2" type="btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </button>
+          </div>
+          <!-- SEARCH INPUT GOES HERE -->
+          <form class="form-inline align-self-start ml-5">
+            <input class="form-control rounded-pill" type="search" placeholder="Artists, songs, or podcasts"
+              aria-label="Search" />
+          </form>
+          <div class="btn-group">
+            <button class="btn btn-dark btn-sm dropdown-toggle rounded-pill border-0" type="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+              martipurull
+            </button>
+            <div class="dropdown-menu">
+              <!-- DROPDOWN ACTIONS CAN BE ADDED IF NECESSARY ... -->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="three-section-container">
+          <div class="recently-played-container mb-5">
+            <h5 class="text-light mt-4">Recently Played</h5>
+            <!-- FIRST CONTAINER RECENTLY-PLAYED-CARD  -->
+            <div class="container-fluid d-flex">
+              <div class="card mt-3 recently-played-card" style="width: 18rem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-x-circle cancel-button-bohemian" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+                <img
+                  src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.f-oGofWW/SharedImage-83983.jpg?t=714c257d214b32dbb01d"
+                  class="card-img-top p-2 img-fluid" alt="queen" />
+                <div class="card-body">
+                  <p class="card-text font-weight-bold text-light mb-0">
+                    Bohemian Rhapsody(Th...
+                  </p>
+                  <p class="text-secondary pt-0">Queen</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">
+                    Read Bio..
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SECOND CONTAINER - TOP GENRES -->
+          <div class="container-fluid top-genres-container mt-5">
+            <h5 class="text-light">Your top genres</h5>
+            <div class="row top-genres-container d-flex text-light font-weight-bolder">
+              <div class="col dance-electric d-flex">
+                <div class="d-flex top-genres-box justify-content-between">
+                  <h4 class="dance-box-header">Dance/Electronic</h4>
+                  <img class="top-genres-box-image"
+                    src="https://edm.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTUyOTgxMDkwNDIyNzYxMDgw/marshmello.jpg"
+                    alt="" />
+                </div>
+              </div>
+              <div class="col bg-danger dance-electric d-flex">
+                <div class="d-flex top-genres-box justify-content-between">
+                  <h4 class="dance-box-header">Rock</h4>
+                  <img class="top-genres-box-image"
+                    src="https://www.washingtonpost.com/resizer/vPytFeC8Jjr_NYL89ujqQs3Oh1Y=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CGEXNOH75MI6TBIBFJYSHI4MLA.jpg"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="text-light mt-5">Browse all</h5>
+          <div class="container-fluid last-container-body">
+            <div class="row browse-all-container d-flex text-light">
+              <div class="
+                    col-12 col-sm-6 col-md-3 col-lg-2
+                    bottom-boxes
+                    first-col-podcasts
+                  ">
+                <h6 class="pt-2">Podcasts</h6>
+                <img class="top-genres-box-image" src="./Spotify_search_page/Avatar-Dissect-S7.jpg" alt="avatar" />
+              </div>
+              <div class="
+                    col-12 col-sm-6 col-md-3 col-lg-2
+                    bottom-boxes
+                    sec-col-madeforyou
+                  ">
+                <h6 class="pt-2">Made For You</h6>
+                <img class="top-genres-box-image" src="./Spotify_search_page/c21c3e8b39084f863a2cd03ed13734ab.jpg"
+                  alt="avatar" />
+              </div>
+              <div class="
+                    col-12 col-sm-6 col-md-3 col-lg-2
+                    bottom-boxes
+                    third-col-charts
+                  ">
+                <h6 class="pt-2">Charts</h6>
+                <img class="top-genres-box-image" src="./Spotify_search_page/region_global_large.jpg" alt="avatar" />
+              </div>
+              <div class="
+                    col-12 col-sm-6 col-md-3 col-lg-2
+                    bottom-boxes
+                    forth-col-releases
+                  ">
+                <h6 class="pt-2">Releases</h6>
+                <img class="top-genres-box-image" src="./Spotify_search_page/EUrpateWsAEiHA2.jpg" alt="avatar" />
+              </div>
+              <div class="
+                    col-12 col-sm-6 col-md-3 col-lg-2
+                    bottom-boxes
+                    fifth-col-discover
+                  ">
+                <h6 class="pt-2">Discover</h6>
+              </div>
+              <div class="
+                    col-12 col-sm-6 col-md-3 col-lg-2
+                    bottom-boxes
+                    sixth-col-concepts
+                  ">
+                <h6 class="pt-2">Concepts</h6>
+              </div>
+              <div class="
+                    col-12 col-sm-6 col-md-3 col-lg-2
+                    bottom-boxes
+                    seventh-col-hiphop
+                  ">
+                <h6 class="pt-2">HipHop</h6>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 col-lg-2 bottom-boxes eights-col-mood">
+                <h6 class="pt-2">Mode</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title font-italic font-weight-bold" id="staticBackdropLabel">
+                Bohemian Rhapsody
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body bg-dark text-light">
+              "Bohemian Rhapsody" is a song by the British rock band
+              <a href="https://en.wikipedia.org/wiki/Queen_(band)">Queen</a>. It
+              was written by
+              <a href="https://en.wikipedia.org/wiki/Freddie_Mercury">Freddie Mercury</a>
+              for the band's 1975 album
+              <a href="https://en.wikipedia.org/wiki/A_Night_at_the_Opera_(Queen_album)">A Night at the Opera.</a>
+              The song is a six-minute suite, notable for its lack of a refraining
+              chorus and consisting of several sections: an intro, a ballad
+              segment, an operatic passage, a hard rock part and a reflective
+              coda. "Bohemian Rhapsody" is one of the few songs to emerge from the
+              1970s progressive rock movement to achieve widespread commercial
+              success and appeal to a mainstream audience. "Bohemian Rhapsody"
+              topped the UK Singles Chart for nine weeks and had sold more than a
+              million copies by the end of January 1976. In 1991, after Mercury's
+              death, it topped the charts for another five weeks, eventually
+              becoming the
+              <a href="https://en.wikipedia.org/wiki/List_of_best-selling_singles_in_the_United_Kingdom">UK's third
+                best-selling single of all time.[6]</a>
+              It is also the only song to reach the UK Christmas number one twice
+              by the same artist. It also topped the charts in countries including
+              Canada, Australia, New Zealand, Ireland, and the Netherlands, and
+              sold over six million copies worldwide. In the United States, the
+              song peaked at number nine in 1976, but reached a new peak of number
+              two on the Billboard Hot 100 after being used in the film Wayne's
+              World (1992). In 2018, the release of Queen biopic Bohemian Rhapsody
+              brought the song renewed popularity and chart success worldwide. In
+              March 2021 it was
+              <a
+                href="https://en.wikipedia.org/wiki/List_of_best-selling_singles_in_the_United_States#Diamond_certification">certified
+                Diamond</a>
+              in the US for combined digital sales and streams equal to 10 million
+              units. Although critical reaction was initially mixed, "Bohemian
+              Rhapsody" has since become Queen's most popular song and is
+              considered one of the greatest rock songs of all time. The single
+              was accompanied by a groundbreaking promotional video. Rolling Stone
+              stated that its influence "cannot be overstated, practically
+              inventing the music video seven years before MTV went on the air."
+              The Guardian named its music video one of the 50 key events in rock
+              music history, helping make videos a critical tool in music
+              marketing. In 2004, "Bohemian Rhapsody" was inducted into the Grammy
+              Hall of Fame. It has appeared in numerous polls of the greatest
+              songs in popular music, including a ranking at number 17 on Rolling
+              Stone's list of "the 500 Greatest Songs of All Time. Mercury's vocal
+              performance was chosen as the greatest in rock history by readers of
+              Rolling Stone. In December 2018, it became the most streamed song
+              from the 20th century, and it had been downloaded or streamed over
+              1.6 billion times.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn">Add to Reading List</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="scroll-container">
+        <div class=" text-light" id="scroll-text">THIS IS AN AMAZING EXPERIENCE THIS IS AN AMAZING EXPERIENCE THIS IS AN
+          AMAZING EXPERIENCE THIS IS AN AMAZING EXPERIENCE</div>
+      </div>
+    </div>
+
+  </div>
+
+  <section>
+    <footer>
+      <div class="main-container1 d-flex">
+        <div class="col-4 mt-3">
+          <div class="row">
+            <div class="col-2">
+              <img class="h-100 w-100"
+                src="https://s.mxmcdn.net/images-storage/albums5/9/6/4/3/9/8/50893469_350_350.jpg" alt="" />
+            </div>
+            <div class="col-8">
+              <h6><strong>Another one bites the dust-Remastered</strong></h6>
+              <h6>Queen</h6>
+            </div>
+            <div class="col-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+              </svg>
+            </div>
+            <div class="col-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square"
+                viewBox="0 0 16 16">
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="center col-6 mt-3">
+          <div class="row">
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-shuffle"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z" />
+                <path
+                  d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z" />
+              </svg>
+            </div>
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                class="bi bi-skip-backward-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.79-2.907L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.79-.407z" />
+              </svg>
+            </div>
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor"
+                class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+              </svg>
+            </div>
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-skip-forward-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.79 5.093A.5.5 0 0 0 4 5.5v5a.5.5 0 0 0 .79.407L7.5 8.972V10.5a.5.5 0 0 0 .79.407L11 8.972V10.5a.5.5 0 0 0 1 0v-5a.5.5 0 0 0-1 0v1.528L8.29 5.093a.5.5 0 0 0-.79.407v1.528L4.79 5.093z" />
+              </svg>
+            </div>
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+              </svg>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-1">0:12</div>
+            <div class="col-9">
+              <div class="slide mt-3">
+                <div class="range"></div>
+              </div>
+            </div>
+            <div class="col-1">3:12</div>
+          </div>
+        </div>
+
+        <div class="col-2 mt-3">
+          <div class="d-flex">
+            <div class="col-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-card-list"
+                viewBox="0 0 16 16">
+                <path
+                  d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                <path
+                  d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+              </svg>
+            </div>
+            <div class="col-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-display"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
+              </svg>
+            </div>
+            <div class="col-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                <path
+                  d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                <path
+                  d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z" />
+              </svg>
+            </div>
+            <div class="col-7 mt-3">
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

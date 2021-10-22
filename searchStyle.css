@@ -2,8 +2,8 @@
   background-color: #0f0f0f;
 } */
 body {
-  height: 3000px;
-  background: linear-gradient(141deg, #0f0f0f 10%, #283530 65%, #2b0101 100%);
+  height: 1390px;
+  /* background: linear-gradient(141deg, #0f0f0f 10%, #283530 65%, #2b0101 100%); */
 }
 
 .top-search-container {
@@ -154,4 +154,24 @@ body {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+}
+
+
+
+
+.three-section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recently-played-container {
+  margin-bottom: 100px!important;
+}
+
+.top-genres-container, .browse-all-container {
+  gap: 10px;
+}
+
+.browse-all-container {
+  flex-wrap: wrap;
 }
