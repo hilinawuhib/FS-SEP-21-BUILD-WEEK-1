@@ -9,6 +9,13 @@ const toggleSunMoon = function () {
     spotifyLogoBlack.classList.toggle('d-none')
 }
 
+const playPauseToggle = function () {
+    const playTriangle = document.querySelector('.play-triangle')
+    playTriangle.classList.toggle('d-none')
+    const pauseBars = document.querySelector('.pause-bars')
+    pauseBars.classList.toggle('d-none')
+}
+
 const toggleLightMode = function () {
     const mainRow = document.querySelector('body>div.row')
     mainRow.classList.toggle('light-mode')

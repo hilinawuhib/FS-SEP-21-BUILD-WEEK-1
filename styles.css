@@ -381,6 +381,11 @@ table > thead > tr {
     height: 38px;
 }
 
+.three-dots img:hover {
+    width: 42px;
+    height: 42px;
+}
+
 .follow-btn {
     background: transparent;
     color: var(--spotify-white);
@@ -389,6 +394,11 @@ table > thead > tr {
     padding: 0px 20px;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+.follow-btn:hover {
+    font-size: 0.9rem;
+    
 }
 
 /* end of button styles   */
@@ -482,6 +492,10 @@ table > thead > tr {
     margin-right: 6px;
 }
 
+.arrows-container ion-icon:hover {
+    box-shadow: 2px 2px 10px var(--spotify-white);
+}
+
 .arrows-container ion-icon:nth-of-type(2) {
     opacity: 0.7;
 }
@@ -509,12 +523,15 @@ table > thead > tr {
 
 .dropdown-and-light-toggle-group>button {
     border-radius: 50%;
-    font-size: 0.8rem;
     font-weight: 600;
     padding: 6px 6px;
     background: var(--spotify-dark-bg);
     color: var(--spotify-white);
     border: none;   
+}
+
+.dropdown-and-light-toggle-group>button:hover {
+    box-shadow: 2px 2px 10px var(--spotify-white);
 }
 
 .light-mode {
