@@ -83,3 +83,19 @@ const toggleLightModeAlbum = function () {
     footer.classList.toggle('light-mode')
     toggleSunMoon()
 }
+
+const toggleLightModeSearch = function () {
+    const mainRow = document.querySelector('body>div.row')
+    mainRow.classList.toggle('light-mode')
+    const navbarColumn = document.querySelector('.navbar-column')
+    navbarColumn.classList.toggle('light-mode')
+    const mainLinksContainer = document.querySelector('.main-links-container')
+    mainLinksContainer.classList.toggle('light-mode')
+    const secondaryLinksContainer = document.querySelector('.secondary-links-container')
+    secondaryLinksContainer.classList.toggle('light-mode')
+    const playlistLinksContainer = document.querySelector('.playlist-links-container')
+    playlistLinksContainer.classList.toggle('light-mode')
+    const footer = document.querySelector('footer')
+    footer.classList.toggle('light-mode')
+    toggleSunMoon()
+}
