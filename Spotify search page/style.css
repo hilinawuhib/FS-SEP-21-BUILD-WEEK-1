@@ -88,7 +88,7 @@ body {
   width: 20%;
   position: absolute;
   transform: rotate(23deg);
-  left: 80%;
+  left: 82%;
   top: 50%;
 }
 
@@ -96,6 +96,62 @@ body {
   width: 30%;
   position: absolute;
   transform: rotate(23deg);
-  left: 70%;
+  left: 73%;
   top: 55%;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  position: absolute;
+  top: 3%;
+  left: 45%;
+}
+/* ========================================§TEST§ */
+
+#scroll-container {
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
