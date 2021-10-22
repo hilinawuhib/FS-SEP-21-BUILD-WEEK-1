@@ -601,6 +601,3 @@ input:checked ~ label:before {
 .rating:hover > input:checked ~ label:before {
   opacity: 0.4;
 }
-#lblGreetings{
-  color: var(--spotify-white);
-}
