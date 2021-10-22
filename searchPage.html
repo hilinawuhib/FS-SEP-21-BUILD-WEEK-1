@@ -9,10 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/searchStyle.css" />
   <link rel="stylesheet" href="styles.css">
-
-  <title>Search!</title>
+  <link rel="stylesheet" href="/searchStyle.css" />
+  <title>Search</title>
 </head>
 
 <body>
@@ -20,9 +19,11 @@
     <div class="col-2 navbar-column">
       <div class="container navbar-main-container sticky-top">
         <div class="logo-container">
-          <img id="main-logo-white" class="img-fluid mt-4 mb-4" src="./mp_assets/Spotify_Logo_RGB_White.png" alt="">
-          <img id="main-logo-black" class="img-fluid mt-4 mb-4 d-none" src="./mp_assets/Spotify_Logo_CMYK_Black.png"
-            alt="">
+          <a href="homepage.html">
+            <img id="main-logo-white" class="img-fluid mt-4 mb-4" src="./mp_assets/Spotify_Logo_RGB_White.png" alt="">
+            <img id="main-logo-black" class="img-fluid mt-4 mb-4 d-none" src="./mp_assets/Spotify_Logo_CMYK_Black.png"
+              alt="">
+          </a>
         </div>
         <div class="main-links-container ">
           <a class="navbar-active-link" href="#">
@@ -31,7 +32,7 @@
           <a href="#">
             <ion-icon class="icon-outline mr-3" name="search-outline"></ion-icon> Search
           </a>
-          <a href="#">
+          <a href="artist.html">
             <ion-icon class="icon-outline mr-3" name="library-outline"></ion-icon> Library
           </a>
         </div>
@@ -68,45 +69,51 @@
         </div>
       </div>
     </div>
-    <div class="col-10">
+    <div class="col-10 px-0">
       <!-- STARTS HERE, MAIN-SEARCH-CONTAINER WRAPS ENTIRE PAGE!!! -->
-      <div class="container mt-3 main-search-container">
+      <div class="mt-3 main-search-container">
         <!-- container for top buttons and search only -->
-        <div class="container-fluid top-search-container d-flex sticky-top">
-          <div class="search-buttons d-inline-flex">
-            <button class="btn rounded-circle ml-2" type="btn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-chevron-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-              </svg>
-            </button>
-            <button class="btn rounded-circle mx-2" type="btn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </button>
+        <div class="container-fluid top-search-container d-flex justify-content-between sticky-top">
+          <div class="arrows-search-group d-flex">
+            <div class="search-buttons d-inline-flex">
+              <button class="btn rounded-circle ml-2" type="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-chevron-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+              </button>
+              <button class="btn rounded-circle mx-2" type="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </button>
+            </div>
+            <!-- SEARCH INPUT GOES HERE -->
+            <form class="form-inline align-self-start ml-5">
+              <input class="form-control rounded-pill" type="search" placeholder="Artists, songs, or podcasts"
+                aria-label="Search" />
+            </form>
           </div>
-          <!-- SEARCH INPUT GOES HERE -->
-          <form class="form-inline align-self-start ml-5">
-            <input class="form-control rounded-pill" type="search" placeholder="Artists, songs, or podcasts"
-              aria-label="Search" />
-          </form>
-          <div class="btn-group">
-            <button class="btn btn-dark btn-sm dropdown-toggle rounded-pill border-0" type="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-              </svg>
-              martipurull
+          <div class="dropdown-and-light-toggle-group d-flex">
+            <button class="mr-3" onclick="toggleLightMode()">
+              <ion-icon id="sun-icon" class="" name="sunny-outline"></ion-icon>
+              <ion-icon id="moon-icon" class="d-none" name="moon-outline"></ion-icon>
             </button>
-            <div class="dropdown-menu">
-              <!-- DROPDOWN ACTIONS CAN BE ADDED IF NECESSARY ... -->
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="artist-profile-pic"
+                  src="./images/Sherlock_Holmes_profilepic.jpeg" alt="">
+
+                <span>sherlockholmes</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="login.html">Account</a>
+                <a class="dropdown-item" href="login.html">Profile</a>
+                <a class="dropdown-item" href="login.html">Log out</a>
+              </div>
             </div>
           </div>
         </div>
@@ -128,9 +135,11 @@
                   <path
                     d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                 </svg>
-                <img
-                  src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.f-oGofWW/SharedImage-83983.jpg?t=714c257d214b32dbb01d"
-                  class="card-img-top p-2 img-fluid" alt="queen" />
+                <a href="album.html">
+                  <img
+                    src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.f-oGofWW/SharedImage-83983.jpg?t=714c257d214b32dbb01d"
+                    class="card-img-top p-2 img-fluid" alt="queen" />
+                </a>
                 <div class="card-body">
                   <p class="card-text font-weight-bold text-light mb-0">
                     Bohemian Rhapsody(Th...
