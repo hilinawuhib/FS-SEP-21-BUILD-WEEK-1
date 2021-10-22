@@ -83,6 +83,7 @@ body {
 #main-logo-white, #main-logo-black {
     max-width: 130px;
     padding-left: 2%;
+}
 
 .navbar-main-container div {
   display: flex;
@@ -126,7 +127,7 @@ body {
     background: var(--spotify-grey);
     color: var(--spotify-white)!important;
     border-radius: 3px;
-
+}
 
 .secondary-links-container {
   margin-top: 20px;
