@@ -108,7 +108,12 @@ window.onload = () => {
 }
 
 const countUnique = function () {
+    const albumTitlesArr = []
     const albumTitles = document.querySelectorAll('.card-body')
-    console.log(albumTitles[0].innerText)
-
+    for (let album of albumTitles) {
+        if (!albumTitlesArr.includes(album.innerText)) {
+            albumTitlesArr.push(album.innerText)
+        }
+    }
+    console.log(albumTitlesArr)
 }
